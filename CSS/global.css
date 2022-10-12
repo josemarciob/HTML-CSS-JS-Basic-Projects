@@ -2,10 +2,16 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background: #111111;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
 }/*# sourceMappingURL=global.css.map */

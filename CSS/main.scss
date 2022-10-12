@@ -1,7 +1,6 @@
 @import './global.scss';
 
 .nav__container {
-  display: flex;
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
@@ -38,7 +37,7 @@
         color: $yellow-Green;
         background: transparent;
         border-color: transparent;
-        transition: all 0.3s linear;
+        transition: all 0.6s ease;
         cursor: pointer;
   
         &:hover {
@@ -63,7 +62,7 @@
           font-weight: bold;
           background: $black-Gray;
           border: none;
-          border-radius: 20px;
+          border-radius: 30px;
     
           padding: 12px 24px 12px 40px;
         }
@@ -116,24 +115,25 @@
       gap: $gap-nav-user;
     }
     @media screen and (min-width: 1180px){
-      gap: 26px;
+      gap: $gap-nav-user2;
     }
     
     .nav-time {
       display: flex;
       align-items: center;
       gap: $gap-nav-user;
-      transition: all ease 0.4s;
 
       img:hover {
+        transition: all 0.6s ease ;
         transform: scale(1.2);
+        cursor: pointer;
       }
 
       .nav-degrees-climate{
       text-align: center;
 
         .degrees-celsius{
-          font-size: 26px;
+          font-size: $gap-nav-user2;
           font-weight: bold;
         }
         .climate{
@@ -149,7 +149,7 @@
         }
       }
       @media screen and (min-width: 1180px){
-        gap: 26px;
+        gap: $gap-nav-user2;
       }
       
     }
@@ -158,13 +158,28 @@
       display: flex;
       align-items: center;
       gap: $gap-nav-user;
-      transition: all ease 0.4s ;
+      
 
       img:hover {
-        transform: scale(1.5);
+        transition: all 0.6s ease  ;
+        transform: scale(1.2);
+        cursor: pointer;
       }
+
+      .nav-user-photo img {
+        border: 3px solid $black-Gray;
+        border-radius: 40px;
+        font-weight: bold;
+        padding: 2px;
+
+        &:hover {
+          border: 3.5px solid $black-Gray2;
+          cursor: pointer;
+        }
+      }
+
       @media screen and (min-width: 1180px){
-        gap: 26px;
+        gap: $gap-nav-user2;
         margin-right: 2rem;
       }
     }
