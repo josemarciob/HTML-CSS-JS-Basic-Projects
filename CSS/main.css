@@ -2,12 +2,18 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
+  list-style-type: none;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background: #111111;
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
 }
 
 .nav__container {
@@ -45,7 +51,7 @@ body {
   cursor: pointer;
 }
 .nav__container .nav__header .nav-header .nav-toggle:hover {
-  transform: rotate(90deg);
+  transform: scale(1.1);
 }
 @media screen and (min-width: 425px) {
   .nav__container .nav__header .nav-header h1 {
@@ -165,6 +171,42 @@ body {
     gap: 26px;
     margin-right: 2rem;
   }
+}
+.nav__container .links {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  background: #141414;
+  z-index: 10;
+}
+@media screen and (min-width: 765px) {
+  .nav__container .links {
+    display: none;
+  }
+}
+.nav__container .links li {
+  display: flex;
+  padding-left: 10px;
+  transition: all 0.3s linear;
+}
+.nav__container .links li a {
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.8rem 0.8rem;
+}
+@media screen and (min-width: 425px) {
+  .nav__container .links li {
+    padding-left: 2rem;
+  }
+  .nav__container .links li a {
+    padding-left: 1.2rem;
+  }
+}
+.nav__container .show-links {
+  height: 17rem;
 }
 @media screen and (min-width: 768px) {
   .nav__container {

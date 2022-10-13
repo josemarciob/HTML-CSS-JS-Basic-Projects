@@ -41,8 +41,9 @@
         cursor: pointer;
   
         &:hover {
-          transform: rotate(90deg);
+          transform: scale(1.1);
         }
+
       }
   
       @media screen and (min-width: 425px) {
@@ -184,6 +185,51 @@
       }
     }
 
+  }
+
+  .links {
+    height: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    background: $black-Gray-alter;
+    z-index: 10;
+
+    @media screen and (min-width:765px){
+      display: none;
+    }
+
+    li {
+      display: flex;
+      padding-left: 10px;
+      transition: all 0.3s linear;
+
+
+      a {
+        color: $white;
+        font-size: 1.2rem;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        display: block;
+        padding: 0.8rem 0.8rem;
+      }
+    }
+
+    @media screen and (min-width: 425px){
+      li {
+        padding-left: 2rem;
+
+        a{
+          padding-left: 1.2rem;
+        }
+      }
+      
+    }
+
+  }
+
+  .show-links {
+    height: 17rem;
+ 
   }
 
   @media screen and (min-width: 768px) {
