@@ -243,13 +243,14 @@ main {
   max-width: 320px;
   margin: 0 auto;
   /* SECTION GPS */
+  /* SECTION MUSICS */
 }
 @media screen and (min-width: 540px) {
   main {
     max-width: 420px;
   }
 }
-main .gps__container {
+main section {
   background: #1e1e1e;
   border-radius: 15px;
 }
@@ -317,4 +318,55 @@ main .gps__container .gps-local-info .local-search {
   background: #2c2c2c;
   padding: 14px 18px;
   border-radius: 40px;
+}
+main .musics__container .music {
+  display: flex;
+  padding: 10px;
+  gap: 10px;
+}
+@media screen and (min-width: 540px) {
+  main .musics__container .music {
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0px;
+  }
+  main .musics__container .music img {
+    width: 129px;
+    height: 96px;
+  }
+}
+main .musics__container .music .music-name {
+  padding-top: 4px;
+  font-size: 18px;
+  font-weight: 600;
+}
+@media screen and (min-width: 540px) {
+  main .musics__container .music .music-name {
+    font-size: 22px;
+  }
+}
+main .musics__container .music .music-author {
+  font-size: 14px;
+  opacity: 50%;
+  font-weight: 300;
+}
+@media screen and (min-width: 540px) {
+  main .musics__container .music .music-author {
+    font-size: 18px;
+  }
+}
+main .musics__container .music-controller {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  gap: 30px;
+  padding-bottom: 10px;
+}
+main .musics__container .music-controller a {
+  display: flex;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+main .musics__container .music-controller a:hover {
+  transform: scale(1.5);
 }/*# sourceMappingURL=main.css.map */

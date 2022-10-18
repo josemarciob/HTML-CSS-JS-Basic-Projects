@@ -15,11 +15,14 @@ main {
   @media screen and (min-width: 540px) {
     max-width: 420px;
   }
+
+  section {
+    background: $black-Gray;
+    border-radius: 15px;
+  }
   
   /* SECTION GPS */
   .gps__container {
-    background: $black-Gray;
-    border-radius: 15px;
 
     .gps-direction-assistant {
       display: flex;
@@ -103,6 +106,66 @@ main {
         padding: 14px 18px;
         border-radius: 40px;
       }
+    }
+  }
+
+  /* SECTION MUSICS */
+  .musics__container {
+    
+    .music {
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+
+      @media screen and (min-width: 540px) {
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0px;
+
+        img {
+          width: 129px;
+          height: 96px;
+        }
+      }
+
+      .music-name{
+        padding-top: 4px;
+        font-size: 18px;
+        font-weight: 600;
+
+        @media screen and (min-width: 540px) {
+          font-size: 22px;
+        }
+      }
+      .music-author {
+        font-size: 14px;
+        opacity: 50%;
+        font-weight: 300;
+
+        @media screen and (min-width: 540px) {
+          font-size: 18px;
+        }
+      }
+      
+    }
+
+    .music-controller {
+      display: flex;
+      justify-content: center;
+      font-size: 20px;
+      gap: 30px;
+      padding-bottom: 10px;
+
+      a {
+        display: flex;
+        align-items: center;
+        transition: all 0.4s ease;
+
+      &:hover {
+        transform: scale(1.5);
+      }
+      }
+      
     }
   }
 }
