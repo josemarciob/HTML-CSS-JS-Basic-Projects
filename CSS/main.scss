@@ -168,6 +168,96 @@ main {
       
     }
   }
+
+  /* SECTION CLIMATE */
+  .climate__container {
+
+    padding: 15px;
+
+    //Window Closed title
+    h2 {
+      margin: 15px 0;
+      font-size: 14px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+
+    @media screen and (min-width: 540px){
+      padding: 15px 22px;
+    }
+    .climate-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .climate {
+        align-items: center;
+
+        h1 {
+          font-size: 20px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+  
+        p {
+          font-size: 12px;
+          opacity: 50%;
+          text-transform: uppercase;
+        }
+
+        @media screen and (min-width: 540px){
+          h1 {
+            font-size: 30px;
+            margin-bottom: 0px;
+          }
+          
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .climate-degrees {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+
+        @media screen and (min-width: 540px){
+          gap: 30px;          
+        }
+  
+        h3 {
+          font-size: 45px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    .climate-progress {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+
+      @media screen and (min-width: 540px){
+        margin-top: 20px;
+      }
+
+      .climate-degrees-progress {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 12px;
+        opacity: 50%;
+
+        @media screen and (min-width: 540px){
+          font-size: 14px;
+        }
+      }
+    }
+   
+
+  }
 }
 
 

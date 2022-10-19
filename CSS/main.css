@@ -244,6 +244,7 @@ main {
   margin: 0 auto;
   /* SECTION GPS */
   /* SECTION MUSICS */
+  /* SECTION CLIMATE */
 }
 @media screen and (min-width: 540px) {
   main {
@@ -369,4 +370,82 @@ main .musics__container .music-controller a {
 }
 main .musics__container .music-controller a:hover {
   transform: scale(1.5);
+}
+main .climate__container {
+  padding: 15px;
+}
+main .climate__container h2 {
+  margin: 15px 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+@media screen and (min-width: 540px) {
+  main .climate__container {
+    padding: 15px 22px;
+  }
+}
+main .climate__container .climate-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .climate__container .climate-box .climate {
+  align-items: center;
+}
+main .climate__container .climate-box .climate h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+main .climate__container .climate-box .climate p {
+  font-size: 12px;
+  opacity: 50%;
+  text-transform: uppercase;
+}
+@media screen and (min-width: 540px) {
+  main .climate__container .climate-box .climate h1 {
+    font-size: 30px;
+    margin-bottom: 0px;
+  }
+  main .climate__container .climate-box .climate p {
+    font-size: 16px;
+  }
+}
+main .climate__container .climate-box .climate-degrees {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+@media screen and (min-width: 540px) {
+  main .climate__container .climate-box .climate-degrees {
+    gap: 30px;
+  }
+}
+main .climate__container .climate-box .climate-degrees h3 {
+  font-size: 45px;
+  font-weight: 600;
+}
+main .climate__container .climate-progress {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+@media screen and (min-width: 540px) {
+  main .climate__container .climate-progress {
+    margin-top: 20px;
+  }
+}
+main .climate__container .climate-progress .climate-degrees-progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 12px;
+  opacity: 50%;
+}
+@media screen and (min-width: 540px) {
+  main .climate__container .climate-progress .climate-degrees-progress {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=main.css.map */
