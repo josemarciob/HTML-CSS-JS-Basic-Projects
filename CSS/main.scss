@@ -258,6 +258,92 @@ main {
    
 
   }
+
+  .calender__container{
+    padding: 18px;
+
+    @media screen and (min-width: 540px){
+      padding: 18px 22px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      @media screen and (min-width: 540px){
+        h1 {
+          font-size: 28px;
+        };
+      }
+    }
+
+    div .calender-date{
+      margin-top: 6px;
+      opacity: 50%;
+      font-size: 14px;
+
+      @media screen and (min-width: 540px){
+        font-size: 16px;
+      }
+    }
+
+    .calender-urdeline {
+      margin: 10px 0px 18px 0px;
+      border-bottom: 2px solid $yellow-Green;
+      opacity: 60%;
+    }
+
+    .calender-commitments {
+
+      .commitment {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+
+        .hours {
+          opacity: 50%;
+          margin-right: 2rem;
+        }
+
+        .box-commitment {
+          background: rgba($white, 0.15);
+          padding: 10px 10px 20px 10px;
+          border-radius: 10px;
+          border-left: 10px solid $yellow-Green;
+
+          @media screen and (min-width: 540px){
+            width: 100%;
+            padding-bottom: 24px;
+          }
+
+          .title-commitment {
+            font-size: 18px;
+
+            @media screen and (min-width: 540px){
+              font-size: 20px;
+            }
+          }
+
+          .hours-commitment {
+            font-size: 14px;
+            opacity: 50%;
+          }
+        }
+      }
+
+
+      .commitment-urdeline {
+        margin-top: 2px;
+        border-bottom: 4px dotted $black-Gray2;
+      }
+    }
+  }
 }
 
 
