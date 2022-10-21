@@ -4,21 +4,20 @@
 
 main {
   display: grid;
-  height: 100vh;
-  grid-template-columns: 1fr;
-  grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
-  gap: 10px;
+  grid-template-columns: 2fr;
+  grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr;
 
   max-width: 320px;
   margin: 0 auto;
 
   @media screen and (min-width: 540px) {
-    max-width: 420px;
+    max-width: 540px;
   }
 
   section {
     background: $black-Gray;
     border-radius: 15px;
+    margin-bottom: 20px;
   }
   
   /* SECTION GPS */
@@ -119,7 +118,7 @@ main {
 
       @media screen and (min-width: 540px) {
         justify-content: center;
-        gap: 20px;
+        gap: 40px;
         padding: 10px 0px;
 
         img {
@@ -259,6 +258,8 @@ main {
 
   }
 
+  /* SECTION CALENDER */
+
   .calender__container{
     padding: 18px;
 
@@ -344,6 +345,65 @@ main {
       }
     }
   }
+
+  /* SECTION CONTROL-TOOLS */
+  .control-tools__container {
+    width: 100% ;
+    padding: 12px 18px;
+    max-width: 320px;
+
+    @media screen and (min-width: 540px){
+      max-width: 540px;
+    }
+
+    .controls {
+      display: flex;
+
+      gap: 20px;
+
+      overflow-x: auto;
+      
+      .control {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: $black-Gray3;
+        padding: 8px 26px;
+        border-radius: 20px;
+
+        cursor: pointer;
+
+        .control-name{
+          margin-top: 8px;
+          font-size: 12px;
+
+          @media screen and (min-width: 540px){
+            font-size: 16px;
+          }
+        }
+
+        .control-seat {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 20px;
+          margin-top: 4px;
+
+          .control-seat-degrees{
+            font-size: 18px;
+
+            @media screen and (min-width: 540px){
+              font-size: 22px;
+            }
+          }
+        }
+        
+      }
+    }
+
+  }
+
 }
 
 
