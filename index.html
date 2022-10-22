@@ -26,43 +26,66 @@
     <title>Car Assistant</title>
   </head>
   <body>
+    <!-- NAVIGATION -->
     <nav>
       <div class="nav__container">
+        <!-- NAV-HEADER -->
         <div class="nav__header">
+          <!-- CONTENT NAV-HEADER-->
           <div class="nav-header">
+            <!-- LOGO/TITLE/SEARCH -->
             <div class="logo-dash-search">
+              <!-- LOGO -->
               <a href="#">
                 <img class="logo" src="./images/logo.png" alt="logo" />
               </a>
+              <!-- TITLE -->
               <h1>Dashboard</h1>
+              <!-- SEARCH -->
               <i class="fa fa-search"></i>
               <input type="search" placeholder="Search" />
             </div>
+            <!-- BUTTON MORE/TOGGLE -->
             <button class="nav-toggle">
               <i class="fas fa-bars"></i>
             </button>
           </div>
         </div>
+        <!-- END NAV-HEADER -->
+
+        <!-- NAV-USER -->
         <div class="nav__user">
+          <!-- CONTENT NAV-TIME -->
           <div class="nav-time">
+            <!-- IMG TIME -->
             <img src="./images/Time.png" alt="Time Photo" />
+
+            <!-- DEGREES/CLIMATE -->
             <div class="nav-degrees-climate">
               <p class="degrees-celsius">25° c</p>
               <p class="climate">Rainy</p>
             </div>
           </div>
+
+          <!-- CONTENT NAV-USER-INFO -->
           <div class="nav-user-info">
+            <!-- NOTIFICATION -->
             <div class="nav-user-notification">
               <img
                 src="./images/NotificationIcon.png"
                 alt="Notification Icon"
               />
             </div>
+
+            <!-- USER-PHOTO -->
             <div class="nav-user-photo">
               <img src="./images/UserPhoto.png" alt="User Photo" />
             </div>
           </div>
         </div>
+        <!-- END NAV-USER -->
+
+        <!-- NAV-LINKS -->
         <ul class="links">
           <li>
             <img src="./images/HomeIcon.svg" alt="Home Icon" />
@@ -85,49 +108,73 @@
             <a href="#">Settings</a>
           </li>
         </ul>
+        <!-- END NAV-LINKS -->
       </div>
     </nav>
+    <!-- END NAVIGATION -->
 
+    <!-- MAIN -->
     <main>
+      <!-- SECTION-GPS -->
       <section class="gps__container">
+        <!-- GPS-DIRECTION-ASSISTANT -->
         <div class="gps-direction-assistant">
+          <!-- ICON ARROW DIRECTION -->
           <img src="./images/ArrowDirection.svg" alt="" />
+
+          <!-- DIRECTION INFO -->
           <div class="direction-info">
             <p>600m</p>
             <p>In 500m take turning right</p>
           </div>
         </div>
+
+        <!-- GPS-MAP -->
         <div class="gps-map">
+          <!-- MAP -->
           <img src="./images/MapGPS.svg" alt="" />
         </div>
+
+        <!-- GPS-LOCAL-INFO -->
         <div class="gps-local-info">
+          <!-- LOCAL-INFO -->
           <div class="local-info">
             <p>Club Town Gardens</p>
             <p>MM Feeder Road, Kolkata</p>
 
+            <!-- KM-INFO-PROGRESS -->
             <div class="km-info">
               <p>2 Km</p>
               <img src="./images/InfoLocalProgress.svg" alt="" />
               <p>3 Min</p>
             </div>
           </div>
+
+          <!-- LOCAL-SEARCH -->
           <div class="local-search">
             <i class="fa fa-search"></i>
           </div>
         </div>
       </section>
+      <!-- END SECTION-GPS -->
 
+      <!-- SECTION-MUSICS -->
       <section class="musics__container">
+        <!-- MUSIC -->
         <div class="music">
+          <!-- PHOTO-MUSIC -->
           <img src="./images/PhotoMusic.svg" alt="" />
 
+          <!-- MUSIC-INFO -->
           <div class="music-info">
             <p class="music-name">Love me like you do</p>
             <p class="music-author">Ellie Goulding</p>
           </div>
         </div>
 
+        <!-- MUSIC-CONTROLLERS -->
         <div class="music-controller">
+          <!-- Back/Stepward -->
           <a href="">
             <img src="./images/BackwardIcon.svg" alt="" />
           </a>
@@ -135,10 +182,12 @@
             <img src="./images/StepBackwardIcon.svg" alt="" />
           </a>
 
+          <!-- PAUSE -->
           <a href="">
             <img src="./images/ButtonMusicPause.svg" alt="" />
           </a>
 
+          <!-- Step/Forward -->
           <a href="">
             <img src="./images/StepForwardIcon.svg" alt="" />
           </a>
@@ -147,45 +196,64 @@
           </a>
         </div>
       </section>
+      <!-- END SECTION-MUSICS -->
 
+      <!-- SECTION-CLIMATES -->
       <section class="climate__container">
+        <!-- CLIMATE-BOX -->
         <div class="climate-box">
+          <!-- CLIMATE -->
           <div class="climate">
             <h1>Climate</h1>
             <p>Interior: 24° c</p>
           </div>
+
+          <!-- CLIMATE-DEGREES -->
           <div class="climate-degrees">
             <h3>23° C</h3>
             <img src="./images/ClimateIcon.svg" alt="" />
           </div>
         </div>
+        <!-- IF WINDOW CLOSED OR OPEN -->
         <h2>WINDOW CLOSED</h2>
+
+        <!-- CLIMATE-PROGRESS -->
         <div class="climate-progress">
           <div>
+            <!-- CLIMATE-DEGREES-PROGRESS -->
             <div class="climate-degrees-progress">
               <p>10° C</p>
               <p>40° C</p>
             </div>
 
+            <!-- IMG CLIMATE-PROGRESS -->
             <img src="./images/ClimateProgress.svg" alt="" />
           </div>
         </div>
       </section>
+      <!-- END SECTION-CLIMATES -->
 
+      <!-- SECTION-CALENDER -->
       <section class="calender__container">
+        <!-- TITLE & MORE -->
         <header>
           <h1>My Calender</h1>
           <img src="./images/EllipsisIcon.png" alt="" />
         </header>
 
+        <!-- DATE -->
         <div>
           <p class="calender-date">5 Aug - 2022</p>
           <p class="calender-urdeline"></p>
         </div>
 
+        <!-- CALENDER-COMMITMENTS -->
         <div class="calender-commitments">
+          <!-- COMMITMENT -->
           <div class="commitment">
             <p class="hours">5:00</p>
+
+            <!-- COMMITMENT TEXT & HOURS -->
             <div class="box-commitment">
               <p class="title-commitment">Meeting with clients</p>
               <p class="hours-commitment">5:00 - 6:20</p>
@@ -201,25 +269,38 @@
           <p class="commitment-urdeline"></p>
         </div>
       </section>
+      <!-- END SECTION-CALENDER -->
 
+      <!-- SECTION-CONTROL-TOOLS -->
       <section class="control-tools__container">
+        <!-- CONTROLS -->
         <div class="controls">
+          <!-- CONTROL HUMIDUTY -->
           <div class="control">
             <img src="./images/HumidutyIcon.svg" alt="" />
             <p class="control-name">Humiduty</p>
           </div>
+          <!-- END CONTROL HUMIDUTY -->
+
+          <!-- CONTROL WIND-->
           <div class="control">
             <img src="./images/WindIcon.svg" alt="" />
             <p class="control-name">Wind</p>
           </div>
+          <!-- END CONTROL WIND-->
+          <!-- CONTROL BLUETOOTH-->
           <div class="control">
             <img src="./images/BluetoothIcon.svg" alt="" />
             <p class="control-name">Bluetooth</p>
           </div>
+          <!-- END CONTROL BLUETOOTH-->
+          <!-- CONTROL MESSAGE-->
           <div class="control">
             <img src="./images/MessageIcon.svg" alt="" />
             <p class="control-name">Message</p>
           </div>
+          <!-- END CONTROL MESSAGE-->
+          <!-- CONTROL SEAT-->
           <div class="control seat">
             <img src="./images/Car-seatIcon.svg" alt="" />
             <div class="control-seat">
@@ -228,9 +309,13 @@
               <img src="./images/ArrowDownIcon.svg" alt="" />
             </div>
           </div>
+          <!-- END CONTROL SEAT-->
         </div>
       </section>
+      <!-- END SECTION-CONTROL-TOOLS -->
     </main>
+    <!-- END MAIN -->
+
     <!-- JAVASCRIPT -->
     <script src="./JS/app.js"></script>
   </body>
