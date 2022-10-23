@@ -1,6 +1,10 @@
+/* IMPORTS */
 @import './global.scss';
 @import './roots.scss';
+/* END IMPORTS */
 
+
+/* NAV CONTAINER */
 .nav__container {
   align-items: center;
   max-width: 1440px;
@@ -11,7 +15,11 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  /* NAV HEADER */
   .nav__header {
+
+    /* CONTENT HEADER */
     .nav-header {
       display: flex;
       align-items: center;
@@ -32,13 +40,22 @@
         display: none;
       }
 
-      .logo-dash-search {
+      @media screen and (min-width: 425px) {
+        h1 {
+          font-size: 2em;
+        }    
+      }
+
+      /* LOGO-TITLE-SEARCH */
+      .logo-title-search {
         i {
           display: none;
           margin-left: 16px;
         }
       }
-  
+      /* END LOGO-TITLE-SEARCH */
+
+      /* NAV TOGGLE */
       .nav-toggle {
         font-size: 2rem;
         color: $yellow-Green;
@@ -52,18 +69,17 @@
         }
 
       }
-  
-      @media screen and (min-width: 425px) {
-        h1 {
-          font-size: 2em;
-        }    
-      }
-  
+      /* END NAV TOGGLE */
+
+      /* @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
       @media screen and (min-width: 768px) {
+        /* nav-toggle */
         .nav-toggle {
           display: none;
         }
+        /* end nav-toggle */
 
+        /* input */
         input {
           display: flex;
           color: $white;
@@ -74,8 +90,10 @@
     
           padding: 12px 24px 12px 40px;
         }
+        /* end input */
 
-        .logo-dash-search {
+        /* logo-title-search */
+        .logo-title-search {
           i {
             display: flex;
             position: relative;
@@ -83,8 +101,13 @@
             left: 7.5%;
           }
         }
-      }
+        /* end logo-title-search */
 
+      }
+      /* END @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
+
+
+      /* DIV/H1/INPUT/LOGO-TITLE-SEARCH */
       @media screen and (min-width: 1180px){
         div {
           .logo {
@@ -105,27 +128,35 @@
           padding-left: 60px;
         }
 
-        .logo-dash-search {
+        .logo-title-search {
           i {
             font-size: 20px;
             left: 7%;
           }
         }
-        }
+      }
+      /* END DIV/H1/INPUT/LOGO-TITLE-SEARCH */
     }
+    /* END CONTENT HEADER */
   }
+  /* END NAV HEADER */
+
+  /* NAV USER */
   .nav__user {
     display: none;
+
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
       padding: 1rem;
       gap: $gap-nav-user;
     }
+
     @media screen and (min-width: 1180px){
       gap: $gap-nav-user2;
     }
     
+    /* TIME */
     .nav-time {
       display: flex;
       align-items: center;
@@ -137,31 +168,45 @@
         cursor: pointer;
       }
 
+      /* DEGRESS/CLIMATE */
       .nav-degrees-climate{
       text-align: center;
 
+        /* DEGREES */
         .degrees-celsius{
           font-size: $gap-nav-user2;
           font-weight: bold;
         }
+        /* END DEGREES */
+
+        /* CLIMADE */
         .climate{
           opacity: 0.5;
           font-weight: 500;
         }
+        /* END CLIMADE */
+
       }
+      /* END DEGRESS/CLIMATE */
+
       @media screen and (max-width: 1024px) {
+        /* DEGRESS CLIMATE/ CELSIUS */
         .nav-degrees-climate{
           .degrees-celsius{
             font-size: 16.5px;
           }
         }
+        /* END DEGRESS CLIMATE/ CELSIUS */
       }
+
       @media screen and (min-width: 1180px){
         gap: $gap-nav-user2;
       }
       
     }
+    /* END TIME */
 
+    /* USER INFO */
     .nav-user-info {
       display: flex;
       align-items: center;
@@ -174,6 +219,7 @@
         cursor: pointer;
       }
 
+      /* USER PHOTO */
       .nav-user-photo img {
         border: 3px solid $black-Gray;
         border-radius: 40px;
@@ -185,15 +231,20 @@
           cursor: pointer;
         }
       }
+      /* END USER PHOTO */
+
 
       @media screen and (min-width: 1180px){
         gap: $gap-nav-user2;
         margin-right: 2rem;
       }
     }
+    /* END USER INFO */
 
   }
+  /* END NAV USER */
 
+  /* NAV LINKS */
   .links {
     height: 0;
     overflow: hidden;
@@ -201,16 +252,13 @@
     background: $black-Gray-alter;
     z-index: 10;
 
-    @media screen and (min-width:765px){
-      display: none;
-    }
-
+    /* LI */
     li {
       display: flex;
       padding-left: 10px;
       transition: all 0.3s linear;
 
-
+      /* link */
       a {
         color: $white;
         font-size: 1.2rem;
@@ -219,6 +267,13 @@
         display: block;
         padding: 0.8rem 0.8rem;
       }
+      /* end link */
+
+    }
+    /* END LI */
+
+    @media screen and (min-width:765px){
+      display: none;
     }
 
     @media screen and (min-width: 425px){
@@ -233,11 +288,14 @@
     }
 
   }
+  /* END NAV LINKS */
 
+  /* NAV SHOW LINKS */
   .show-links {
     height: 17rem;
  
   }
+  /* END NAV SHOW LINKS */
 
-  
 }
+/* END NAV CONTAINER */
