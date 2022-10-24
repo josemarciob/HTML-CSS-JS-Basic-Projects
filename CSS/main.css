@@ -1,4 +1,11 @@
+/* IMPORTS */ /* IMPORTS */
+/* COLORS */
+/* END COLORS */
+/* UTILS */
+/* END UTILS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* END IMPORTS */
+/* ALL */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 * {
   margin: 0;
@@ -8,16 +15,28 @@
   list-style-type: none;
 }
 
+/* END ALL */
+/* BODY */
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background: #111111;
 }
 
+/* END BODY */
+/* LINKS */
 a, a:link, a:visited {
   text-decoration: none;
 }
 
+/* END LINKS */
+/* IMPORTS */ /* IMPORTS */
+/* COLORS */
+/* END COLORS */
+/* UTILS */
+/* END UTILS */
+/* END IMPORTS */
+/* ALL */
 * {
   margin: 0;
   padding: 0;
@@ -26,20 +45,39 @@ a, a:link, a:visited {
   list-style-type: none;
 }
 
+/* END ALL */
+/* BODY */
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background: #111111;
 }
 
+/* END BODY */
+/* LINKS */
 a, a:link, a:visited {
   text-decoration: none;
 }
 
+/* END LINKS */
+/* COLORS */
+/* END COLORS */
+/* UTILS */
+/* END UTILS */
+/* END IMPORTS */
+/* NAV CONTAINER */
 .nav__container {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+  /* NAV HEADER */
+  /* END NAV HEADER */
+  /* NAV USER */
+  /* END NAV USER */
+  /* NAV LINKS */
+  /* END NAV LINKS */
+  /* NAV SHOW LINKS */
+  /* END NAV SHOW LINKS */
 }
 @media screen and (min-width: 768px) {
   .nav__container {
@@ -48,11 +86,23 @@ a, a:link, a:visited {
     justify-content: space-between;
   }
 }
+.nav__container .nav__header {
+  /* CONTENT HEADER */
+  /* END CONTENT HEADER */
+}
 .nav__container .nav__header .nav-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  /* LOGO-TITLE-SEARCH */
+  /* END LOGO-TITLE-SEARCH */
+  /* NAV TOGGLE */
+  /* END NAV TOGGLE */
+  /* @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
+  /* END @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
+  /* DIV/H1/INPUT/LOGO-TITLE-SEARCH */
+  /* END DIV/H1/INPUT/LOGO-TITLE-SEARCH */
 }
 .nav__container .nav__header .nav-header div {
   display: flex;
@@ -65,7 +115,12 @@ a, a:link, a:visited {
 .nav__container .nav__header .nav-header input {
   display: none;
 }
-.nav__container .nav__header .nav-header .logo-dash-search i {
+@media screen and (min-width: 425px) {
+  .nav__container .nav__header .nav-header h1 {
+    font-size: 2em;
+  }
+}
+.nav__container .nav__header .nav-header .logo-title-search i {
   display: none;
   margin-left: 16px;
 }
@@ -80,12 +135,15 @@ a, a:link, a:visited {
 .nav__container .nav__header .nav-header .nav-toggle:hover {
   transform: scale(1.1);
 }
-@media screen and (min-width: 425px) {
-  .nav__container .nav__header .nav-header h1 {
-    font-size: 2em;
-  }
-}
 @media screen and (min-width: 768px) {
+  .nav__container .nav__header .nav-header {
+    /* nav-toggle */
+    /* end nav-toggle */
+    /* input */
+    /* end input */
+    /* logo-title-search */
+    /* end logo-title-search */
+  }
   .nav__container .nav__header .nav-header .nav-toggle {
     display: none;
   }
@@ -98,7 +156,7 @@ a, a:link, a:visited {
     border-radius: 30px;
     padding: 12px 24px 12px 40px;
   }
-  .nav__container .nav__header .nav-header .logo-dash-search i {
+  .nav__container .nav__header .nav-header .logo-title-search i {
     display: flex;
     position: relative;
     margin-right: 4px;
@@ -121,13 +179,17 @@ a, a:link, a:visited {
     font-size: 1.4rem;
     padding-left: 60px;
   }
-  .nav__container .nav__header .nav-header .logo-dash-search i {
+  .nav__container .nav__header .nav-header .logo-title-search i {
     font-size: 20px;
     left: 7%;
   }
 }
 .nav__container .nav__user {
   display: none;
+  /* TIME */
+  /* END TIME */
+  /* USER INFO */
+  /* END USER INFO */
 }
 @media screen and (min-width: 768px) {
   .nav__container .nav__user {
@@ -146,6 +208,8 @@ a, a:link, a:visited {
   display: flex;
   align-items: center;
   gap: 17px;
+  /* DEGRESS/CLIMATE */
+  /* END DEGRESS/CLIMATE */
 }
 .nav__container .nav__user .nav-time img:hover {
   transition: all 0.6s ease;
@@ -154,6 +218,10 @@ a, a:link, a:visited {
 }
 .nav__container .nav__user .nav-time .nav-degrees-climate {
   text-align: center;
+  /* DEGREES */
+  /* END DEGREES */
+  /* CLIMADE */
+  /* END CLIMADE */
 }
 .nav__container .nav__user .nav-time .nav-degrees-climate .degrees-celsius {
   font-size: 26px;
@@ -164,6 +232,10 @@ a, a:link, a:visited {
   font-weight: 500;
 }
 @media screen and (max-width: 1024px) {
+  .nav__container .nav__user .nav-time {
+    /* DEGRESS CLIMATE/ CELSIUS */
+    /* END DEGRESS CLIMATE/ CELSIUS */
+  }
   .nav__container .nav__user .nav-time .nav-degrees-climate .degrees-celsius {
     font-size: 16.5px;
   }
@@ -177,6 +249,8 @@ a, a:link, a:visited {
   display: flex;
   align-items: center;
   gap: 17px;
+  /* USER PHOTO */
+  /* END USER PHOTO */
 }
 .nav__container .nav__user .nav-user-info img:hover {
   transition: all 0.6s ease;
@@ -205,16 +279,15 @@ a, a:link, a:visited {
   transition: all 0.4s ease;
   background: #141414;
   z-index: 10;
-}
-@media screen and (min-width: 765px) {
-  .nav__container .links {
-    display: none;
-  }
+  /* LI */
+  /* END LI */
 }
 .nav__container .links li {
   display: flex;
   padding-left: 10px;
   transition: all 0.3s linear;
+  /* link */
+  /* end link */
 }
 .nav__container .links li a {
   color: #ffffff;
@@ -223,6 +296,11 @@ a, a:link, a:visited {
   letter-spacing: 0.1rem;
   display: block;
   padding: 0.8rem 0.8rem;
+}
+@media screen and (min-width: 765px) {
+  .nav__container .links {
+    display: none;
+  }
 }
 @media screen and (min-width: 425px) {
   .nav__container .links li {
@@ -236,6 +314,13 @@ a, a:link, a:visited {
   height: 17rem;
 }
 
+/* END NAV CONTAINER */
+/* COLORS */
+/* END COLORS */
+/* UTILS */
+/* END UTILS */
+/* END IMPORTS */
+/* MAIN */
 main {
   display: grid;
   grid-template-columns: 2fr;
@@ -243,10 +328,17 @@ main {
   max-width: 320px;
   margin: 0 auto;
   /* SECTION GPS */
+  /* END SECTION GPS */
   /* SECTION MUSICS */
+  /* END SECTION MUSICS */
   /* SECTION CLIMATE */
+  /* END SECTION CLIMATE */
   /* SECTION CALENDER */
+  /* END SECTION CALENDER */
   /* SECTION CONTROL-TOOLS */
+  /* END SECTION CONTROL-TOOLS */
+  /* SECTION EMERGENCY */
+  /* END SECTION EMERGENCY */
 }
 @media screen and (min-width: 540px) {
   main {
@@ -257,6 +349,14 @@ main section {
   background: #1e1e1e;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+main .gps__container {
+  /* GPS DIRECTION ASSISTANT */
+  /* END GPS DIRECTION ASSISTANT */
+  /* GPS MAP */
+  /* END GPS MAP */
+  /* GPS LOCAL INFO */
+  /* END GPS LOCAL INFO */
 }
 main .gps__container .gps-direction-assistant {
   display: flex;
@@ -323,6 +423,12 @@ main .gps__container .gps-local-info .local-search {
   padding: 14px 18px;
   border-radius: 40px;
 }
+main .musics__container {
+  /* MUSIC */
+  /* END MUSIC */
+  /* MUSIC-CONTROLLER */
+  /* END MUSIC-CONTROLLER */
+}
 main .musics__container .music {
   display: flex;
   padding: 10px;
@@ -376,6 +482,10 @@ main .musics__container .music-controller a:hover {
 }
 main .climate__container {
   padding: 15px;
+  /* CLIMATE-BOX */
+  /* END CLIMATE-BOX */
+  /* CLIMATE-PROGRESS */
+  /* END CLIMATE-DEGREES */
 }
 main .climate__container h2 {
   margin: 15px 0;
@@ -392,6 +502,10 @@ main .climate__container .climate-box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  /* CLIMATE */
+  /* END CLIMATE */
+  /* CLIMATE-DEGREES */
+  /* END CLIMATE-DEGREES */
 }
 main .climate__container .climate-box .climate {
   align-items: center;
@@ -434,6 +548,8 @@ main .climate__container .climate-progress {
   justify-content: center;
   align-items: center;
   margin-top: 10px;
+  /* CLIMATE DEGREES PROGRESS */
+  /* END CLIMATE DEGREES PROGRESS */
 }
 @media screen and (min-width: 540px) {
   main .climate__container .climate-progress {
@@ -530,6 +646,8 @@ main .control-tools__container {
   width: 100%;
   padding: 12px 18px;
   max-width: 320px;
+  /* CONTROLS */
+  /* END CONTROLS */
 }
 @media screen and (min-width: 540px) {
   main .control-tools__container {
@@ -540,6 +658,8 @@ main .control-tools__container .controls {
   display: flex;
   gap: 20px;
   overflow-x: auto;
+  /* CONTROL */
+  /* END CONTROL */
 }
 main .control-tools__container .controls .control {
   display: flex;
@@ -550,6 +670,10 @@ main .control-tools__container .controls .control {
   padding: 8px 26px;
   border-radius: 20px;
   cursor: pointer;
+  /* CONTROL-NAME */
+  /* END CONTROL-NAME */
+  /* CONTROL-SEAT */
+  /* END CONTROL-SEAT */
 }
 main .control-tools__container .controls .control .control-name {
   margin-top: 8px;
@@ -566,6 +690,8 @@ main .control-tools__container .controls .control .control-seat {
   justify-content: center;
   gap: 20px;
   margin-top: 4px;
+  /* CONTROL SEAT DEGREES */
+  /* END CONTROL SEAT DEGREES */
 }
 main .control-tools__container .controls .control .control-seat .control-seat-degrees {
   font-size: 18px;
@@ -574,4 +700,52 @@ main .control-tools__container .controls .control .control-seat .control-seat-de
   main .control-tools__container .controls .control .control-seat .control-seat-degrees {
     font-size: 22px;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+main .emergency__container {
+  padding: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* EMERGENCY */
+  /* END EMERGENCY */
+}
+@media screen and (min-width: 540px) {
+  main .emergency__container {
+    padding: 1.5rem;
+  }
+}
+main .emergency__container .emergency {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  /* EMERGENCY TITLE */
+  /* END EMERGENCY TITLE */
+}
+@media screen and (min-width: 540px) {
+  main .emergency__container .emergency {
+    gap: 1.5rem;
+  }
+}
+main .emergency__container .emergency .emergency-title {
+  /* @media emergency-title */
+  /* end @media emergency-title */
+}
+main .emergency__container .emergency .emergency-title h2 {
+  font-size: 1.475rem;
+}
+main .emergency__container .emergency .emergency-title p {
+  font-size: 0.875rem;
+  opacity: 50%;
+}
+@media screen and (min-width: 540px) {
+  main .emergency__container .emergency .emergency-title h2 {
+    font-size: 1.675rem;
+  }
+  main .emergency__container .emergency .emergency-title p {
+    font-size: 1rem;
+    opacity: 50%;
+  }
+}
+
+/* END MAIN *//*# sourceMappingURL=main.css.map */

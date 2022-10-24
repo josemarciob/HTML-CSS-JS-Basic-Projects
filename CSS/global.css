@@ -1,4 +1,11 @@
+/* IMPORTS */
+/* COLORS */
+/* END COLORS */
+/* UTILS */
+/* END UTILS */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/* END IMPORTS */
+/* ALL */
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +14,18 @@
   list-style-type: none;
 }
 
+/* END ALL */
+/* BODY */
 body {
   font-family: "Poppins", sans-serif;
   color: #ffffff;
   background: #111111;
 }
 
+/* END BODY */
+/* LINKS */
 a, a:link, a:visited {
   text-decoration: none;
-}/*# sourceMappingURL=global.css.map */
+}
+
+/* END LINKS *//*# sourceMappingURL=global.css.map */
