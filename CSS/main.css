@@ -339,6 +339,10 @@ main {
   /* END SECTION CONTROL-TOOLS */
   /* SECTION EMERGENCY */
   /* END SECTION EMERGENCY */
+  /* SECTION CAR */
+  /* SHOW-CAR */
+  /* END SHOW-CAR */
+  /* END SECTION CAR */
 }
 @media screen and (min-width: 540px) {
   main {
@@ -349,6 +353,9 @@ main section {
   background: #1e1e1e;
   border-radius: 15px;
   margin-bottom: 20px;
+}
+main section:last-child {
+  background: transparent;
 }
 main .gps__container {
   /* GPS DIRECTION ASSISTANT */
@@ -746,6 +753,117 @@ main .emergency__container .emergency .emergency-title p {
     font-size: 1rem;
     opacity: 50%;
   }
+}
+main .car__container {
+  /* ANALOG */
+  /* END ANALOG */
+  /* PLATFORM CONTAINER */
+  /* END PLATFORM CONTAINER */
+  /* PLATFORM OPEN-BLOCK */
+  /* END PLATFORM OPEN-BLOCK */
+}
+main .car__container .analog__container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  /* ANALOG LEFT/RIGHT */
+  /* END ANALOG LEFT/RIGHT */
+  /* CAR */
+  /* END CAR */
+}
+main .car__container .analog__container .analog-left:hover, main .car__container .analog__container .analog-right:hover {
+  cursor: pointer;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .analog__container .analog-left img, main .car__container .analog__container .analog-right img {
+    width: 86px;
+    height: 86px;
+  }
+}
+main .car__container .analog__container .car {
+  z-index: 10;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .analog__container .car img {
+    width: 358px;
+    height: 191px;
+  }
+}
+main .car__container .platform__container {
+  display: flex;
+  position: relative;
+  text-align: center;
+  /* PLATFORM CAR */
+  /* END PLATFORM CAR */
+}
+main .car__container .platform__container .platform-car {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: -6rem;
+  left: 0.275rem;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .platform__container .platform-car {
+    top: -8.5rem;
+    left: 0.875rem;
+  }
+  main .car__container .platform__container .platform-car img {
+    width: 500px;
+  }
+}
+main .car__container .platform-open-block {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 0 3rem;
+  position: relative;
+  z-index: 11;
+  /* PLATFORM OPEN & BLOCK */
+  /* END PLATFORM OPEN & BLOCK */
+  /* PLATFORM BLOCK */
+  /* END PLATFORM BLOCK */
+  /* @media PLATFORM Open & Block */
+  /* END @media PLATFORM Open & Block */
+}
+main .car__container .platform-open-block .platform-open, main .car__container .platform-open-block .platform-block {
+  display: flex;
+  position: absolute;
+  top: -4rem;
+}
+main .car__container .platform-open-block .platform-open:hover, main .car__container .platform-open-block .platform-block:hover {
+  cursor: pointer;
+}
+main .car__container .platform-open-block .platform-block {
+  left: 234px;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .platform-open-block {
+    padding: 0 5rem;
+    /* PLATFORM OPEN & BLOCK */
+    /* END PLATFORM OPEN & BLOCK */
+    /* PLATFORM BLOCK */
+    /* END PLATFORM BLOCK */
+  }
+  main .car__container .platform-open-block .platform-open, main .car__container .platform-open-block .platform-block {
+    display: flex;
+    position: absolute;
+    top: -6rem;
+  }
+  main .car__container .platform-open-block .platform-open img, main .car__container .platform-open-block .platform-block img {
+    width: 50px;
+    height: 50px;
+  }
+  main .car__container .platform-open-block .platform-open:hover, main .car__container .platform-open-block .platform-block:hover {
+    cursor: pointer;
+  }
+  main .car__container .platform-open-block .platform-block {
+    left: 410px;
+  }
+}
+main .show-car {
+  display: none;
 }
 
 /* END MAIN *//*# sourceMappingURL=main.css.map */
