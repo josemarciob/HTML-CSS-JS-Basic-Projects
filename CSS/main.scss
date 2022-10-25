@@ -10,7 +10,7 @@ main {
   grid-template-columns: 2fr;
   grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr;
 
-  max-width: 320px;
+  max-width: 320px ;
   margin: 0 auto;
 
   @media screen and (min-width: 540px) {
@@ -22,6 +22,13 @@ main {
     border-radius: 15px;
     margin-bottom: 20px;
   }
+
+  //SECTION CAR__CONTAINER
+  section:last-child {
+    background: transparent;
+  }
+  //END SECTION CAR__CONTAINER
+
   
   /* SECTION GPS */
   .gps__container {
@@ -507,6 +514,152 @@ main {
 
   }
   /* END SECTION EMERGENCY */
+
+  /* SECTION CAR */
+  .car__container {
+    
+    /* ANALOG */
+    .analog__container {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      position: relative;
+
+      /* ANALOG LEFT/RIGHT */
+      .analog-left, .analog-right {
+        &:hover {
+          cursor: pointer;
+        }
+
+        @media screen and (min-width: 540px){
+          img {
+            width: 86px;
+            height: 86px;
+          }
+        }
+      }
+      /* END ANALOG LEFT/RIGHT */
+
+      /* CAR */
+      .car{
+        z-index: 10;
+
+        @media screen and (min-width: 540px){
+          img {
+            width: 358px;
+            height: 191px;
+          }
+        }
+      }
+      /* END CAR */
+
+    }
+    /* END ANALOG */
+
+    /* PLATFORM CONTAINER */
+    .platform__container {
+      display: flex;
+      position: relative;
+      text-align: center;
+
+      /* PLATFORM CAR */
+      .platform-car {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        top: -6rem;
+        left: 0.275rem;
+
+        @media screen and (min-width: 540px){
+          top: -8.5rem;
+          left: 0.875rem;
+
+          img {
+            width: 500px;      
+          }
+        }
+      }
+      /* END PLATFORM CAR */
+
+    }
+    /* END PLATFORM CONTAINER */
+
+    /* PLATFORM OPEN-BLOCK */
+    .platform-open-block {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+
+      padding: 0 3rem;
+      position: relative;
+      
+      z-index: 11;
+
+
+      /* PLATFORM OPEN & BLOCK */
+      .platform-open, .platform-block {
+        display: flex;
+        position: absolute;
+        top: -4rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      /* END PLATFORM OPEN & BLOCK */
+
+      /* PLATFORM BLOCK */
+      .platform-block {
+        left: 234px;
+        
+      }
+      /* END PLATFORM BLOCK */
+
+
+      /* @media PLATFORM Open & Block */
+      @media screen and (min-width: 540px){
+        padding: 0 5rem;
+
+        /* PLATFORM OPEN & BLOCK */
+        .platform-open, .platform-block {
+          display: flex;
+          position: absolute;
+          top: -6rem;   
+
+          img {
+            width: 50px;
+            height: 50px;
+          }
+    
+          &:hover {
+            cursor: pointer;
+          }
+        }
+        /* END PLATFORM OPEN & BLOCK */
+
+    
+        /* PLATFORM BLOCK */
+        .platform-block {
+          left: 410px;
+          
+        }
+        /* END PLATFORM BLOCK */
+      }
+      /* END @media PLATFORM Open & Block */
+
+    }
+    /* END PLATFORM OPEN-BLOCK */
+
+  }
+  /* SHOW-CAR */
+  .show-car {
+    display: none;
+  }
+  /* END SHOW-CAR */
+  /* END SECTION CAR */
+
+  
+
 }
 /* END MAIN */
 
