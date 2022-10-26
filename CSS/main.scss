@@ -8,13 +8,14 @@
 main {
   display: grid;
   grid-template-columns: 2fr;
-  grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr;
+  grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr;
 
   max-width: 320px ;
   margin: 0 auto;
 
   @media screen and (min-width: 540px) {
     max-width: 540px;
+    grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr;
   }
 
   section {
@@ -24,7 +25,8 @@ main {
   }
 
   //SECTION CAR__CONTAINER
-  section:last-child {
+  section:nth-child(7),
+  section:nth-child(8) {
     background: transparent;
   }
   //END SECTION CAR__CONTAINER
@@ -517,149 +519,216 @@ main {
 
   /* SECTION CAR */
   .car__container {
-    
-    /* ANALOG */
-    .analog__container {
-      display: flex;
-      align-items: flex-start;
-      justify-content: space-between;
-      position: relative;
-
-      /* ANALOG LEFT/RIGHT */
-      .analog-left, .analog-right {
-        &:hover {
-          cursor: pointer;
-        }
-
-        @media screen and (min-width: 540px){
-          img {
-            width: 86px;
-            height: 86px;
+    transition: all 1s ease;
+    .car-container {
+      height: 0;
+      transition: all 1s cubic-bezier(0, 1.38, 1, 1.38);
+      z-index: 111;
+      overflow: hidden;
+      
+      /* ANALOG */
+      .analog__container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        position: relative;
+  
+        /* ANALOG LEFT/RIGHT */
+        .analog-left, .analog-right {
+          &:hover {
+            cursor: pointer;
+          }
+  
+          @media screen and (min-width: 540px){
+            img {
+              width: 86px;
+              height: 86px;
+            }
           }
         }
-      }
-      /* END ANALOG LEFT/RIGHT */
-
-      /* CAR */
-      .car{
-        z-index: 10;
-
-        @media screen and (min-width: 540px){
-          img {
-            width: 358px;
-            height: 191px;
+        /* END ANALOG LEFT/RIGHT */
+  
+        /* CAR */
+        .car{
+          z-index: 10;
+  
+          @media screen and (min-width: 540px){
+            img {
+              width: 358px;
+              height: 191px;
+            }
           }
         }
+        /* END CAR */
+  
       }
-      /* END CAR */
-
-    }
-    /* END ANALOG */
-
-    /* PLATFORM CONTAINER */
-    .platform__container {
-      display: flex;
-      position: relative;
-      text-align: center;
-
-      /* PLATFORM CAR */
-      .platform-car {
+      /* END ANALOG */
+  
+      /* PLATFORM CONTAINER */
+      .platform__container {
+        display: flex;
+        position: relative;
+        text-align: center;
+  
+        /* PLATFORM CAR */
+        .platform-car {
+          display: flex;
+          justify-content: space-between;
+          position: absolute;
+          top: -6rem;
+          left: 0.275rem;
+  
+          @media screen and (min-width: 540px){
+            top: -8.5rem;
+            left: 0.875rem;
+  
+            img {
+              width: 500px;      
+            }
+          }
+        }
+        /* END PLATFORM CAR */
+  
+      }
+      /* END PLATFORM CONTAINER */
+  
+      /* PLATFORM OPEN-BLOCK */
+      .platform-open-block {
         display: flex;
         justify-content: space-between;
-        position: absolute;
-        top: -6rem;
-        left: 0.275rem;
-
-        @media screen and (min-width: 540px){
-          top: -8.5rem;
-          left: 0.875rem;
-
-          img {
-            width: 500px;      
-          }
-        }
-      }
-      /* END PLATFORM CAR */
-
-    }
-    /* END PLATFORM CONTAINER */
-
-    /* PLATFORM OPEN-BLOCK */
-    .platform-open-block {
-      display: flex;
-      justify-content: space-between;
-      text-align: center;
-
-      padding: 0 3rem;
-      position: relative;
-      
-      z-index: 11;
-
-
-      /* PLATFORM OPEN & BLOCK */
-      .platform-open, .platform-block {
-        display: flex;
-        position: absolute;
-        top: -4rem;
-
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      /* END PLATFORM OPEN & BLOCK */
-
-      /* PLATFORM BLOCK */
-      .platform-block {
-        left: 234px;
+        text-align: center;
+  
+        padding: 0 3rem;
+        position: relative;
         
-      }
-      /* END PLATFORM BLOCK */
-
-
-      /* @media PLATFORM Open & Block */
-      @media screen and (min-width: 540px){
-        padding: 0 5rem;
-
+        z-index: 11;
+  
+  
         /* PLATFORM OPEN & BLOCK */
         .platform-open, .platform-block {
           display: flex;
           position: absolute;
-          top: -6rem;   
-
-          img {
-            width: 50px;
-            height: 50px;
-          }
-    
+          top: -4rem;
+  
           &:hover {
             cursor: pointer;
           }
         }
         /* END PLATFORM OPEN & BLOCK */
-
-    
+  
         /* PLATFORM BLOCK */
         .platform-block {
-          left: 410px;
+          left: 234px;
           
         }
         /* END PLATFORM BLOCK */
+  
+  
+        /* @media PLATFORM Open & Block */
+        @media screen and (min-width: 540px){
+          padding: 0 5rem;
+  
+          /* PLATFORM OPEN & BLOCK */
+          .platform-open, .platform-block {
+            display: flex;
+            position: absolute;
+            top: -6rem;   
+  
+            img {
+              width: 50px;
+              height: 50px;
+            }
+      
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          /* END PLATFORM OPEN & BLOCK */
+  
+      
+          /* PLATFORM BLOCK */
+          .platform-block {
+            left: 410px;
+            
+          }
+          /* END PLATFORM BLOCK */
+        }
+        /* END @media PLATFORM Open & Block */
+  
       }
-      /* END @media PLATFORM Open & Block */
+      /* END PLATFORM OPEN-BLOCK */
+    }
+
+    /* SHOW-CAR */
+    .show-car {
+      height: 10rem;
+
+      @media screen and (min-width: 540px){
+        height: 15rem;
+      }
+    }
+    /* END SHOW-CAR */
+
+    /* CAR CONTROLS */
+    .car__controls {
+      display: flex;
+      margin-top: 1rem;
+      align-items: center;
+      justify-content: center;
+      gap: 1.5rem;
+      transition: all 0.4s ease;
+
+      @media screen and (min-width: 540px){
+        gap: 3rem;
+      }
+
+      /* CAR CONTROLS LI */
+      li {
+        text-align: center;
+        transition: all 0.4s ease;
+
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+
+        p {
+          font-size: 14px;
+        }
+        
+
+        @media screen and (min-width: 540px){
+          p {
+            font-size: 1.2rem;
+          }
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+      /* END CAR CONTROLS LI */
+
+      /* CONTROL BRIGHTNESS/STATISTICS */
+      .control-brightness, .control-statistics {
+        height: 0;
+        overflow: hidden;
+        transition: all 0.4s ease;
+        z-index: 10;
+      }
+      /* END CONTROL BRIGHTNESS/STATISTICS */
+
+      /* SHOW CONTROL */
+      .show-control {
+        height: auto;
+      }
+      /* SHOW CONTROL */
 
     }
-    /* END PLATFORM OPEN-BLOCK */
+    /* END CAR CONTROLS */
 
   }
-  /* SHOW-CAR */
-  .show-car {
-    display: none;
-  }
-  /* END SHOW-CAR */
   /* END SECTION CAR */
-
-  
-
 }
 /* END MAIN */
 
