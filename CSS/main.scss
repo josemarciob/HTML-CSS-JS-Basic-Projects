@@ -727,15 +727,99 @@ main {
     }
     /* END CAR CONTROLS */
 
+    /* CAR PANEL BOARD */
+    .car-panel-board_container {
+      height: 0;
+      transition: all 1s cubic-bezier(0, -0.4, 1, -0.37);
+      z-index: 111;
+      overflow: hidden;
+
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      line-height: 1.1;
+
+      margin-top: 1rem;
+
+      /* @media PETRO/BATTERY/SPEEDOMETER */
+      @media screen and (min-width: 540px){
+        margin-top: 2rem;
+
+        .petrol, .battery {
+          img {
+            width: 127px;
+          }
+        }
+
+        .speedometer {
+          img {
+            width: 280px;
+          }
+        }
+
+      }
+      /* END @media PETRO/BATTERY/SPEEDOMETER */
+
+
+      /* BOARD PETROL & BOARD BATTERY */
+      .board-petrol, .board-battery {
+        font-size: 14px;
+        position: absolute;
+        top: 40px;
+        
+        p:first-child {
+          margin-top: 4px;
+          
+          @media screen and (min-width: 540px){
+            padding-top: 18px;
+          }
+        }
+      }
+      /* END BOARD PETROL & BOARD BATTERY */
+
+
+      /* BOARD PETROL */
+      .board-petrol {
+        left: 24px;
+
+        @media screen and (min-width: 540px){
+          left: 44px;
+        }
+      }
+      /* END BOARD PETROL */
+
+      /* BOARD BATTERY */
+      .board-battery {
+        right: 16px;
+
+        @media screen and (min-width: 540px){
+          right: 40px;
+        }
+      }
+      /* END BOARD BATTERY */
+
+      /* SPEEDOMETER */
+      .speedometer {
+        padding-top: 15px;
+      }
+      /* END SPEEDOMETER */
+  
+    }
+    
+    /* SHOW CAR PANEL BOARD */
+    .show-car-panel-board {
+      height: 10rem;
+
+      @media screen and (min-width: 540px){
+        height: 15rem;
+      }
+    }
+    /* END SHOW CAR PANEL BOARD */
+
+    /* END CAR PANEL BOARD */
+
   }
   /* END SECTION CAR */
 }
 /* END MAIN */
-
-
-
-
-
-
-
-
