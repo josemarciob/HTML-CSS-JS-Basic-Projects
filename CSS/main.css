@@ -84,6 +84,12 @@ a, a:link, a:visited {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav__container {
+    flex-direction: row;
   }
 }
 .nav__container .nav__header {
@@ -154,7 +160,8 @@ a, a:link, a:visited {
     background: #1e1e1e;
     border: none;
     border-radius: 30px;
-    padding: 12px 24px 12px 40px;
+    font-size: 1.4rem;
+    padding: 12px 24px 12px 56px;
   }
   .nav__container .nav__header .nav-header .logo-title-search i {
     display: flex;
@@ -163,10 +170,9 @@ a, a:link, a:visited {
     left: 7.5%;
   }
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1100px) {
   .nav__container .nav__header .nav-header {
     padding-left: 3rem;
-    padding-top: 2rem;
   }
   .nav__container .nav__header .nav-header div .logo {
     height: 55px;
@@ -176,7 +182,6 @@ a, a:link, a:visited {
     font-size: 2.5rem;
   }
   .nav__container .nav__header .nav-header input {
-    font-size: 1.4rem;
     padding-left: 60px;
   }
   .nav__container .nav__header .nav-header .logo-title-search i {
@@ -191,15 +196,24 @@ a, a:link, a:visited {
   /* USER INFO */
   /* END USER INFO */
 }
+@media screen and (max-width: 767px) {
+  .nav__container .nav__user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    gap: 17px;
+  }
+}
 @media screen and (min-width: 768px) {
   .nav__container .nav__user {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    margin-bottom: 1rem;
     gap: 17px;
   }
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1024px) {
   .nav__container .nav__user {
     gap: 26px;
   }
@@ -226,6 +240,7 @@ a, a:link, a:visited {
 .nav__container .nav__user .nav-time .nav-degrees-climate .degrees-celsius {
   font-size: 26px;
   font-weight: bold;
+  font-size: 24px;
 }
 .nav__container .nav__user .nav-time .nav-degrees-climate .climate {
   opacity: 0.5;
@@ -236,11 +251,8 @@ a, a:link, a:visited {
     /* DEGRESS CLIMATE/ CELSIUS */
     /* END DEGRESS CLIMATE/ CELSIUS */
   }
-  .nav__container .nav__user .nav-time .nav-degrees-climate .degrees-celsius {
-    font-size: 16.5px;
-  }
 }
-@media screen and (min-width: 1180px) {
+@media screen and (min-width: 1024px) {
   .nav__container .nav__user .nav-time {
     gap: 26px;
   }
@@ -386,6 +398,14 @@ main .gps__container .gps-direction-assistant .direction-info p:last-child {
   font-weight: 400;
   opacity: 50%;
 }
+@media screen and (min-width: 540px) {
+  main .gps__container .gps-direction-assistant .direction-info p:first-child {
+    font-size: 28px;
+  }
+  main .gps__container .gps-direction-assistant .direction-info p:last-child {
+    font-size: 16px;
+  }
+}
 main .gps__container .gps-map {
   text-align: center;
 }
@@ -415,6 +435,14 @@ main .gps__container .gps-local-info .local-info p:nth-child(2) {
   font-size: 12px;
   opacity: 50%;
 }
+@media screen and (min-width: 540px) {
+  main .gps__container .gps-local-info .local-info p:first-child {
+    font-size: 18px;
+  }
+  main .gps__container .gps-local-info .local-info p:nth-child(2) {
+    font-size: 16px;
+  }
+}
 main .gps__container .gps-local-info .km-info {
   display: flex;
   align-items: center;
@@ -425,10 +453,18 @@ main .gps__container .gps-local-info .km-info p:nth-child(1), main .gps__contain
   font-size: 12px;
   opacity: 50%;
 }
+@media screen and (min-width: 540px) {
+  main .gps__container .gps-local-info .km-info p:nth-child(1), main .gps__container .gps-local-info .km-info p:nth-child(3) {
+    font-size: 16px;
+  }
+}
 main .gps__container .gps-local-info .local-search {
   background: #2c2c2c;
   padding: 14px 18px;
   border-radius: 40px;
+}
+main .gps__container .gps-local-info .local-search:hover {
+  cursor: pointer;
 }
 main .musics__container {
   /* MUSIC */
@@ -761,6 +797,8 @@ main .car__container {
   /* CAR CONTROLS */
   /* END CAR CONTROLS */
   /* CAR PANEL BOARD */
+  /* SHOW CAR PANEL BOARD */
+  /* END SHOW CAR PANEL BOARD */
   /* END CAR PANEL BOARD */
 }
 main .car__container .car-container {
@@ -941,6 +979,16 @@ main .car__container .car-panel-board_container {
   position: relative;
   line-height: 1.1;
   margin-top: 1rem;
+  /* @media PETRO/BATTERY/SPEEDOMETER */
+  /* END @media PETRO/BATTERY/SPEEDOMETER */
+  /* BOARD PETROL & BOARD BATTERY */
+  /* END BOARD PETROL & BOARD BATTERY */
+  /* BOARD PETROL */
+  /* END BOARD PETROL */
+  /* BOARD BATTERY */
+  /* END BOARD BATTERY */
+  /* SPEEDOMETER */
+  /* END SPEEDOMETER */
 }
 @media screen and (min-width: 540px) {
   main .car__container .car-panel-board_container {
