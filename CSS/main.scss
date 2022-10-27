@@ -10,7 +10,7 @@ main {
   grid-template-columns: 2fr;
   grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr;
 
-  max-width: 320px ;
+  max-width: 320px;
   margin: 0 auto;
 
   @media screen and (min-width: 540px) {
@@ -58,6 +58,17 @@ main {
           font-weight: 400;
           opacity: 50%;
         }
+
+        @media screen and (min-width: 540px){
+          p:first-child {
+            font-size: 28px;
+          }
+  
+          p:last-child{
+            font-size: 16px;
+
+          }
+        }
       }
     }
     /* END GPS DIRECTION ASSISTANT */
@@ -90,10 +101,7 @@ main {
 
       border-radius: 0px 0px 15px 15px;
 
-
       .local-info {
-
-
         p:first-child {
           font-size: 14px;
           font-weight: 600;
@@ -102,6 +110,16 @@ main {
         p:nth-child(2){
           font-size: 12px;
           opacity: 50%;
+        }
+
+        @media screen and (min-width: 540px){
+          p:first-child {
+            font-size: 18px;
+          }
+  
+          p:nth-child(2){
+            font-size: 16px;
+          }
         }
       }
 
@@ -115,12 +133,22 @@ main {
           font-size: 12px;
           opacity: 50%;
         }
+
+        @media screen and (min-width: 540px){
+          p:nth-child(1), p:nth-child(3){
+            font-size: 16px;
+          }
+        }
       }
 
       .local-search {
         background: $black-Gray3;
         padding: 14px 18px;
         border-radius: 40px;
+
+        &:hover { 
+          cursor: pointer;
+        }
       }
     }
     /* END GPS LOCAL INFO */
