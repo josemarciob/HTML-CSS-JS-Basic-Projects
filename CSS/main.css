@@ -758,6 +758,10 @@ main .car__container {
   transition: all 1s ease;
   /* SHOW-CAR */
   /* END SHOW-CAR */
+  /* CAR CONTROLS */
+  /* END CAR CONTROLS */
+  /* CAR PANEL BOARD */
+  /* END CAR PANEL BOARD */
 }
 main .car__container .car-container {
   height: 0;
@@ -886,6 +890,12 @@ main .car__container .car__controls {
   justify-content: center;
   gap: 1.5rem;
   transition: all 0.4s ease;
+  /* CAR CONTROLS LI */
+  /* END CAR CONTROLS LI */
+  /* CONTROL BRIGHTNESS/STATISTICS */
+  /* END CONTROL BRIGHTNESS/STATISTICS */
+  /* SHOW CONTROL */
+  /* SHOW CONTROL */
 }
 @media screen and (min-width: 540px) {
   main .car__container .car__controls {
@@ -919,6 +929,69 @@ main .car__container .car__controls .control-brightness, main .car__container .c
 }
 main .car__container .car__controls .show-control {
   height: auto;
+}
+main .car__container .car-panel-board_container {
+  height: 0;
+  transition: all 1s cubic-bezier(0, -0.4, 1, -0.37);
+  z-index: 111;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  line-height: 1.1;
+  margin-top: 1rem;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .car-panel-board_container {
+    margin-top: 2rem;
+  }
+  main .car__container .car-panel-board_container .petrol img, main .car__container .car-panel-board_container .battery img {
+    width: 127px;
+  }
+  main .car__container .car-panel-board_container .speedometer img {
+    width: 280px;
+  }
+}
+main .car__container .car-panel-board_container .board-petrol, main .car__container .car-panel-board_container .board-battery {
+  font-size: 14px;
+  position: absolute;
+  top: 40px;
+}
+main .car__container .car-panel-board_container .board-petrol p:first-child, main .car__container .car-panel-board_container .board-battery p:first-child {
+  margin-top: 4px;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .car-panel-board_container .board-petrol p:first-child, main .car__container .car-panel-board_container .board-battery p:first-child {
+    padding-top: 18px;
+  }
+}
+main .car__container .car-panel-board_container .board-petrol {
+  left: 24px;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .car-panel-board_container .board-petrol {
+    left: 44px;
+  }
+}
+main .car__container .car-panel-board_container .board-battery {
+  right: 16px;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .car-panel-board_container .board-battery {
+    right: 40px;
+  }
+}
+main .car__container .car-panel-board_container .speedometer {
+  padding-top: 15px;
+}
+main .car__container .show-car-panel-board {
+  height: 10rem;
+}
+@media screen and (min-width: 540px) {
+  main .car__container .show-car-panel-board {
+    height: 15rem;
+  }
 }
 
 /* END MAIN *//*# sourceMappingURL=main.css.map */
