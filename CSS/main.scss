@@ -101,6 +101,7 @@ main {
 
       border-radius: 0px 0px 15px 15px;
 
+      /* LOCAL INFO */
       .local-info {
         p:first-child {
           font-size: 14px;
@@ -111,7 +112,8 @@ main {
           font-size: 12px;
           opacity: 50%;
         }
-
+        
+        /* @media lcaol-info */
         @media screen and (min-width: 540px){
           p:first-child {
             font-size: 18px;
@@ -121,26 +123,38 @@ main {
             font-size: 16px;
           }
         }
-      }
+        /* END @media lcaol-info */
 
+      }
+      /* END LOCAL INFO */
+
+      /* KM INFO */
       .km-info {
         display: flex;
         align-items: center;
         gap: 8px;
         padding-top: 10px;
 
-        p:nth-child(1), p:nth-child(3){
+        p:nth-child(1), 
+        p:nth-child(3){
           font-size: 12px;
           opacity: 50%;
         }
 
+        /* @media KM INFO */
         @media screen and (min-width: 540px){
-          p:nth-child(1), p:nth-child(3){
+          p:nth-child(1), 
+          p:nth-child(3){
             font-size: 16px;
           }
         }
-      }
+        /* END @media KM INFO */
 
+      }
+      /* END KM INFO */
+
+
+      /* LOCAL SEARCH */
       .local-search {
         background: $black-Gray3;
         padding: 14px 18px;
@@ -150,6 +164,8 @@ main {
           cursor: pointer;
         }
       }
+      /* END LOCAL SEARCH */
+
     }
     /* END GPS LOCAL INFO */
 
@@ -166,6 +182,7 @@ main {
       padding: 10px;
       gap: 10px;
 
+      /* @media MUSIC */
       @media screen and (min-width: 540px) {
         justify-content: center;
         gap: 40px;
@@ -176,7 +193,9 @@ main {
           height: 96px;
         }
       }
+      /* END @media MUSIC */
 
+      /* MUSIC NAME */
       .music-name{
         padding-top: 4px;
         font-size: 18px;
@@ -186,6 +205,9 @@ main {
           font-size: 22px;
         }
       }
+      /* END MUSIC NAME */
+
+      /* MUSIC AUTHOR */
       .music-author {
         font-size: 14px;
         opacity: 50%;
@@ -195,6 +217,8 @@ main {
           font-size: 18px;
         }
       }
+      /* END MUSIC AUTHOR */
+
       
     }
     /* END MUSIC */
@@ -212,9 +236,9 @@ main {
         align-items: center;
         transition: all 0.4s ease;
 
-      &:hover {
-        transform: scale(1.5);
-      }
+        &:hover {
+          transform: scale(1.5);
+        }
       }
       
     }
@@ -335,6 +359,7 @@ main {
       padding: 18px 22px;
     }
 
+    /* HEADER */
     header {
       display: flex;
       align-items: center;
@@ -351,7 +376,10 @@ main {
         };
       }
     }
+    /* END HEADER */
 
+
+    /* CALENDER DATE */
     div .calender-date{
       margin-top: 6px;
       opacity: 50%;
@@ -361,36 +389,47 @@ main {
         font-size: 16px;
       }
     }
+    /* END CALENDER DATE */
 
+    /* CALENDER URLELINE */
     .calender-urdeline {
       margin: 10px 0px 18px 0px;
       border-bottom: 2px solid $yellow-Green;
       opacity: 60%;
     }
+    /* END CALENDER URLELINE */
 
+    /* CALENDER COMMITMENTS */
     .calender-commitments {
 
+      /* COMMITMENT */
       .commitment {
         display: flex;
         align-items: center;
         margin: 10px 0px;
 
+        /* HOURS */
         .hours {
           opacity: 50%;
           margin-right: 2rem;
         }
+        /* END HOURS */
 
+        /* BOX COMMITMENT */
         .box-commitment {
           background: rgba($white, 0.15);
           padding: 10px 10px 20px 10px;
           border-radius: 10px;
           border-left: 10px solid $yellow-Green;
 
+          /* @media @BOX COMMITMENT */
           @media screen and (min-width: 540px){
             width: 100%;
             padding-bottom: 24px;
           }
+          /* END @media @BOX COMMITMENT */
 
+          /* TITLE COMMITMENT */
           .title-commitment {
             font-size: 18px;
 
@@ -398,19 +437,28 @@ main {
               font-size: 20px;
             }
           }
+          /* END TITLE COMMITMENT */
 
+          /* HOUR COMMITMENT */
           .hours-commitment {
             font-size: 14px;
             opacity: 50%;
           }
+          /* END HOUR COMMITMENT */
+
         }
+        /* END BOX COMMITMENT */
+
       }
+      /* END COMMITMENT */
 
-
+      /* COMMIMENT URDELINE */
       .commitment-urdeline {
         margin-top: 2px;
         border-bottom: 4px dotted $black-Gray2;
       }
+      /* END COMMIMENT URDELINE */
+
     }
   }
   /* END SECTION CALENDER */
@@ -422,9 +470,12 @@ main {
     padding: 12px 18px;
     max-width: 320px;
 
+    /* @media CONTROL TOOLS CONTAINER */
     @media screen and (min-width: 540px){
       max-width: 540px;
     }
+    /* END @media CONTROL TOOLS CONTAINER */
+
 
     /* CONTROLS */
     .controls {
@@ -495,10 +546,11 @@ main {
     align-items: center;
     justify-content: space-between;
 
+    /* @media EMERGENCY CONTAINER */
     @media screen and (min-width: 540px){
       padding: 1.5rem;
-
     }
+    /* END @media EMERGENCY CONTAINER */
 
     /* EMERGENCY */
     .emergency {
@@ -508,9 +560,12 @@ main {
 
       gap: 1rem;
 
+      /* @media EMERGENCY */
       @media screen and (min-width: 540px){
         gap: 1.5rem;
       }
+      /* END @media EMERGENCY */
+
 
       /* EMERGENCY TITLE */
       .emergency-title {
@@ -548,6 +603,7 @@ main {
   /* SECTION CAR */
   .car__container {
     transition: all 1s ease;
+
     .car-container {
       height: 0;
       transition: all 1s cubic-bezier(0, 1.38, 1, 1.38);
@@ -566,13 +622,16 @@ main {
           &:hover {
             cursor: pointer;
           }
-  
+          
+          /* @media analog-left-right */
           @media screen and (min-width: 540px){
             img {
               width: 86px;
               height: 86px;
             }
           }
+          /* END @media analog-left-right */
+
         }
         /* END ANALOG LEFT/RIGHT */
   
@@ -580,12 +639,15 @@ main {
         .car{
           z-index: 10;
   
+          /* @media CAR */
           @media screen and (min-width: 540px){
             img {
               width: 358px;
               height: 191px;
             }
           }
+          /* END @media CAR */
+
         }
         /* END CAR */
   
@@ -605,7 +667,8 @@ main {
           position: absolute;
           top: -6rem;
           left: 0.275rem;
-  
+          
+          /* @media PLATFORM CAR */
           @media screen and (min-width: 540px){
             top: -8.5rem;
             left: 0.875rem;
@@ -614,6 +677,8 @@ main {
               width: 500px;      
             }
           }
+          /* END @media PLATFORM CAR */
+
         }
         /* END PLATFORM CAR */
   
@@ -691,9 +756,12 @@ main {
     .show-car {
       height: 10rem;
 
+      /* @media SHOW CAR */
       @media screen and (min-width: 540px){
         height: 15rem;
       }
+      /* END @media SHOW CAR */
+
     }
     /* END SHOW-CAR */
 
@@ -706,9 +774,12 @@ main {
       gap: 1.5rem;
       transition: all 0.4s ease;
 
+      /* @media CAR CONTROLS */
       @media screen and (min-width: 540px){
         gap: 3rem;
       }
+      /* END @media CAR CONTROLS */
+
 
       /* CAR CONTROLS LI */
       li {
@@ -724,7 +795,7 @@ main {
           font-size: 14px;
         }
         
-
+        /* @media LI */
         @media screen and (min-width: 540px){
           p {
             font-size: 1.2rem;
@@ -734,6 +805,8 @@ main {
             width: 50px;
           }
         }
+        /* END @media LI */
+
       }
       /* END CAR CONTROLS LI */
 
@@ -774,17 +847,21 @@ main {
       @media screen and (min-width: 540px){
         margin-top: 2rem;
 
+        /* PETROL / BATTERY */
         .petrol, .battery {
           img {
             width: 127px;
           }
         }
+        /* END PETROL / BATTERY */
 
+        /* SPEEDOMETER */
         .speedometer {
           img {
             width: 280px;
           }
         }
+        /* END SPEEDOMETER */
 
       }
       /* END @media PETRO/BATTERY/SPEEDOMETER */
@@ -799,9 +876,12 @@ main {
         p:first-child {
           margin-top: 4px;
           
+          /* @media P first-child */
           @media screen and (min-width: 540px){
             padding-top: 18px;
           }
+          /* END @media P first-child */
+
         }
       }
       /* END BOARD PETROL & BOARD BATTERY */
@@ -811,9 +891,12 @@ main {
       .board-petrol {
         left: 24px;
 
+        /* @media BOARD PETROL */
         @media screen and (min-width: 540px){
           left: 44px;
         }
+        /* END @media BOARD PETROL */
+
       }
       /* END BOARD PETROL */
 
@@ -821,9 +904,12 @@ main {
       .board-battery {
         right: 16px;
 
+        /* @media BOARD BATTERY */
         @media screen and (min-width: 540px){
           right: 40px;
         }
+        /* END @media BOARD BATTERY */
+
       }
       /* END BOARD BATTERY */
 
@@ -839,9 +925,12 @@ main {
     .show-car-panel-board {
       height: 10rem;
 
+      /* @media SHOW CAR PANEL BOARD */
       @media screen and (min-width: 540px){
         height: 15rem;
       }
+      /* END @media SHOW CAR PANEL BOARD */
+
     }
     /* END SHOW CAR PANEL BOARD */
 
