@@ -279,43 +279,53 @@
 
       <!-- SECTION-CONTROL-TOOLS -->
       <section class="control-tools__container">
-        <!-- CONTROLS -->
-        <div class="controls">
-          <!-- CONTROL HUMIDUTY -->
-          <div class="control">
-            <img src="./images/HumidutyIcon.svg" alt="" />
-            <p class="control-name">Humiduty</p>
-          </div>
-          <!-- END CONTROL HUMIDUTY -->
+        <!-- ARROWS BUTTONS -->
+        <button class="arrow-left control" aria-label="Previous Image">
+          🢀
+        </button>
+        <button class="arrow-right control" aria-label="Next Image">🢂</button>
 
-          <!-- CONTROL WIND-->
-          <div class="control">
-            <img src="./images/WindIcon.svg" alt="" />
-            <p class="control-name">Wind</p>
-          </div>
-          <!-- END CONTROL WIND-->
-          <!-- CONTROL BLUETOOTH-->
-          <div class="control">
-            <img src="./images/BluetoothIcon.svg" alt="" />
-            <p class="control-name">Bluetooth</p>
-          </div>
-          <!-- END CONTROL BLUETOOTH-->
-          <!-- CONTROL MESSAGE-->
-          <div class="control">
-            <img src="./images/MessageIcon.svg" alt="" />
-            <p class="control-name">Message</p>
-          </div>
-          <!-- END CONTROL MESSAGE-->
-          <!-- CONTROL SEAT-->
-          <div class="control seat">
-            <img src="./images/Car-seatIcon.svg" alt="" />
-            <div class="control-seat">
-              <img src="./images/ArrowUpIcon.svg" alt="" />
-              <p class="control-seat-degrees">20</p>
-              <img src="./images/ArrowDownIcon.svg" alt="" />
+        <!-- CONTROLS WRAPPER-->
+        <div class="controls-wrapper">
+          <!-- CONTROLS -->
+          <div class="controls">
+            <div class="control-item">
+              <img
+                src="./images/HumidutyIcon.svg"
+                alt="Humiduty Icon"
+                class="item"
+              />
+              <p class="control-name">Humiduty</p>
+            </div>
+            <div class="control-item">
+              <img src="./images/WindIcon.svg" alt="Wind Icon" class="item" />
+              <p class="control-name">Wind</p>
+            </div>
+            <div class="control-item">
+              <img
+                src="./images/BluetoothIcon.svg"
+                alt="Bluetooth Icon"
+                class="item"
+              />
+              <p class="control-name">Bluetooth</p>
+            </div>
+            <div class="control-item">
+              <img
+                src="./images/MessageIcon.svg"
+                alt="Message Icon"
+                class="item"
+              />
+              <p class="control-name">Message</p>
+            </div>
+            <div class="control-item">
+              <img
+                src="./images/Car-seatIcon.svg"
+                alt="Message Icon"
+                class="item"
+              />
+              <p class="control-name">Seat</p>
             </div>
           </div>
-          <!-- END CONTROL SEAT-->
         </div>
       </section>
       <!-- END SECTION-CONTROL-TOOLS -->
@@ -406,7 +416,8 @@
           <!-- CONTROL FINGERPRINT -->
           <li class="control-fingerprint">
             <img src="./images/FingerprintBtn.svg" alt="" />
-            <p>Fingerprint</p>
+            <p class="login">Log in</p>
+            <span class="disconnect"><p>Disconnect</p></span>
           </li>
           <!-- END CONTROL FINGERPRINT -->
 
