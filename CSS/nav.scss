@@ -3,7 +3,6 @@
 @import './roots.scss';
 /* END IMPORTS */
 
-
 /* NAV CONTAINER */
 .nav__container {
   align-items: center;
@@ -20,28 +19,29 @@
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
+    margin: 0.675rem 1rem;
   }
+
 
   /* NAV HEADER */
   .nav__header {
-
     /* CONTENT HEADER */
     .nav-header {
-      display: flex;
+      display: flex;;
       align-items: center;
       justify-content: space-between;
       padding: 1rem;
-  
+
       div {
         display: flex;
         align-items: center;
       }
-  
+
       h1 {
         font-size: 2em;
         margin-left: 16px;
       }
-  
+
       input {
         display: none;
       }
@@ -49,7 +49,7 @@
       @media screen and (min-width: 425px) {
         h1 {
           font-size: 2em;
-        }    
+        }
       }
 
       /* LOGO-TITLE-SEARCH */
@@ -69,11 +69,10 @@
         border-color: transparent;
         transition: all 0.6s ease;
         cursor: pointer;
-  
+
         &:hover {
           transform: scale(1.1);
         }
-
       }
       /* END NAV TOGGLE */
 
@@ -94,7 +93,7 @@
           border: none;
           border-radius: 30px;
           font-size: 1.4rem;
-    
+
           padding: 12px 24px 12px 56px;
         }
         /* end input */
@@ -109,13 +108,11 @@
           }
         }
         /* end logo-title-search */
-
       }
       /* END @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
 
-
       /* DIV/H1/INPUT/LOGO-TITLE-SEARCH */
-      @media screen and (min-width: 1100px){
+      @media screen and (min-width: 1100px) {
         div {
           .logo {
             height: 55px;
@@ -124,10 +121,10 @@
         }
 
         padding-left: 3rem;
-  
+
         h1 {
           font-size: 2.5rem;
-        } 
+        }
 
         input {
           padding-left: 60px;
@@ -165,10 +162,11 @@
       gap: $gap-nav-user;
     }
 
-    @media screen and (min-width: 1024px){
+    @media screen and (min-width: 1024px) {
       gap: $gap-nav-user2;
+      margin-bottom: 0;
     }
-    
+
     /* TIME */
     .nav-time {
       display: flex;
@@ -176,17 +174,17 @@
       gap: $gap-nav-user;
 
       img:hover {
-        transition: all 0.6s ease ;
+        transition: all 0.6s ease;
         transform: scale(1.2);
         cursor: pointer;
       }
 
       /* DEGRESS/CLIMATE */
-      .nav-degrees-climate{
-      text-align: center;
+      .nav-degrees-climate {
+        text-align: center;
 
         /* DEGREES */
-        .degrees-celsius{
+        .degrees-celsius {
           font-size: $gap-nav-user2;
           font-weight: bold;
           font-size: 24px;
@@ -194,25 +192,23 @@
         /* END DEGREES */
 
         /* CLIMADE */
-        .climate{
+        .climate {
           opacity: 0.5;
           font-weight: 500;
         }
         /* END CLIMADE */
-
       }
       /* END DEGRESS/CLIMATE */
 
       @media screen and (max-width: 1024px) {
         /* DEGRESS CLIMATE/ CELSIUS */
-        
+
         /* END DEGRESS CLIMATE/ CELSIUS */
       }
 
-      @media screen and (min-width: 1024px){
+      @media screen and (min-width: 1024px) {
         gap: $gap-nav-user2;
       }
-      
     }
     /* END TIME */
 
@@ -221,10 +217,9 @@
       display: flex;
       align-items: center;
       gap: $gap-nav-user;
-      
 
       img:hover {
-        transition: all 0.6s ease  ;
+        transition: all 0.6s ease;
         transform: scale(1.2);
         cursor: pointer;
       }
@@ -243,14 +238,12 @@
       }
       /* END USER PHOTO */
 
-
-      @media screen and (min-width: 1180px){
+      @media screen and (min-width: 1180px) {
         gap: $gap-nav-user2;
         margin-right: 2rem;
       }
     }
     /* END USER INFO */
-
   }
   /* END NAV USER */
 
@@ -278,34 +271,30 @@
         padding: 0.8rem 0.8rem;
       }
       /* end link */
-
     }
     /* END LI */
 
-    @media screen and (min-width:765px){
+    @media screen and (min-width: 765px) {
       display: none;
     }
 
-    @media screen and (min-width: 425px){
+    @media screen and (min-width: 425px) {
       li {
         padding-left: 2rem;
 
-        a{
+        a {
           padding-left: 1.2rem;
         }
       }
-      
     }
-
   }
   /* END NAV LINKS */
 
   /* NAV SHOW LINKS */
   .show-links {
     height: 17rem;
- 
+    margin-bottom: 1rem;
   }
   /* END NAV SHOW LINKS */
-
 }
 /* END NAV CONTAINER */
