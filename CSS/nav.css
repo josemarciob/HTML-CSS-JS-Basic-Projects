@@ -59,6 +59,7 @@ a, a:link, a:visited {
 @media screen and (min-width: 1024px) {
   .nav__container {
     flex-direction: row;
+    margin: 0.675rem 1rem;
   }
 }
 .nav__container .nav__header {
@@ -185,6 +186,7 @@ a, a:link, a:visited {
 @media screen and (min-width: 1024px) {
   .nav__container .nav__user {
     gap: 26px;
+    margin-bottom: 0;
   }
 }
 .nav__container .nav__user .nav-time {
@@ -293,6 +295,7 @@ a, a:link, a:visited {
 }
 .nav__container .show-links {
   height: 17rem;
+  margin-bottom: 1rem;
 }
 
 /* END NAV CONTAINER *//*# sourceMappingURL=nav.css.map */
