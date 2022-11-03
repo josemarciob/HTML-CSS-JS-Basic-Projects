@@ -338,8 +338,8 @@ a, a:link, a:visited {
 /* MAIN */
 main {
   display: grid;
-  grid-template-columns: 2fr;
-  grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr 0.5fr;
   max-width: 320px;
   margin: 0 auto;
   /* SECTION GPS */
@@ -357,10 +357,107 @@ main {
   /* SECTION CAR */
   /* END SECTION CAR */
 }
+main .links-main {
+  display: none;
+}
 @media screen and (min-width: 540px) {
   main {
     max-width: 540px;
-    grid-template-rows: 1fr 0.2fr 0.2fr 0.4fr 0.2fr 0.2fr;
+  }
+}
+@media screen and (min-width: 768px) {
+  main {
+    height: 90vh;
+    grid-template-columns: 80px 100px 100px 100px 342px;
+    grid-template-rows: repeat(24, 70px);
+    gap: 10px;
+    max-width: 768px;
+  }
+  main .links-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-column: 1;
+    grid-row: 1/9;
+    gap: 50px;
+  }
+  main .links-main li {
+    display: flex;
+    background: #252525;
+    padding: 20px;
+    border-radius: 100%;
+  }
+  main .gps__container {
+    grid-column: 2/5;
+    grid-row: 1/8;
+  }
+  main .climate__container {
+    grid-column: 5/6;
+    grid-row: 1/5;
+  }
+  main .climate__container .climate-box {
+    display: block !important;
+  }
+  main .climate__container .climate-box .climate-degrees {
+    justify-content: space-between;
+  }
+  main .climate__container .climate-progress {
+    margin-top: 34px !important;
+  }
+  main .calender__container {
+    grid-column: 5/6;
+    grid-row: 5/8;
+  }
+  main .calender__container .calender-commitments .commitment-grid,
+main .calender__container .calender-commitments .urderline-grid {
+    display: none !important;
+  }
+  main .musics__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    grid-column: 2/6;
+    grid-row: 8/10;
+  }
+  main .musics__container .music {
+    gap: 20px !important;
+  }
+  main .control-tools__container {
+    grid-column: 1/6;
+    grid-row: 10/12;
+    max-width: 768px !important;
+  }
+  main .control-tools__container .controls {
+    gap: 82px !important;
+  }
+  main .emergency__container {
+    grid-column: 1/6;
+    grid-row: 12/14;
+    background: #1e1e1e !important;
+    padding: 0 34px !important;
+  }
+  main .car__container {
+    grid-column: 1/6;
+    grid-row: 14/15;
+  }
+  main .car__container .analog__container .analog-left {
+    padding-left: 40px;
+  }
+  main .car__container .analog__container .analog-right {
+    padding-right: 40px;
+  }
+  main .car__container .platform__container .platform-car {
+    left: 7.9rem !important;
+  }
+  main .car__container .platform-open-block .platform-open {
+    left: 11rem !important;
+  }
+  main .car__container .platform-open-block .platform-block {
+    left: 528px !important;
+  }
+  main section {
+    margin-bottom: 0 !important;
   }
 }
 main section {
@@ -737,7 +834,6 @@ main .control-tools__container {
   justify-content: center;
   position: relative;
   padding: 15px 40px 15px 15px;
-  max-width: 540px;
   width: 100%;
   max-width: 320px;
   /* @media CONTROL TOOLS CONTAINER */
