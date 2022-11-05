@@ -12,14 +12,19 @@
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
 
     flex-direction: column;
   }
 
   @media screen and (min-width: 1024px) {
     flex-direction: row;
-    margin: 0.675rem 1rem;
+  }
+
+  @media screen and (min-width: 1368px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
 
@@ -138,6 +143,15 @@
         }
       }
       /* END DIV/H1/INPUT/LOGO-TITLE-SEARCH */
+
+      /* @media INPUT SEARCH */
+      @media screen and (min-width: 1368px) {
+        input {
+          padding: 12px 5rem 12px 70px;
+        }
+      }
+      /* END @media INPUT SEARCH */
+
     }
     /* END CONTENT HEADER */
   }

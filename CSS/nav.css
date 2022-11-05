@@ -52,14 +52,20 @@ a, a:link, a:visited {
   .nav__container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
   }
 }
 @media screen and (min-width: 1024px) {
   .nav__container {
     flex-direction: row;
-    margin: 0.675rem 1rem;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .nav__container .nav__header {
@@ -79,6 +85,8 @@ a, a:link, a:visited {
   /* END @MEDIA NAV-TOGGLE/LOGO-TITLE-SEARCH */
   /* DIV/H1/INPUT/LOGO-TITLE-SEARCH */
   /* END DIV/H1/INPUT/LOGO-TITLE-SEARCH */
+  /* @media INPUT SEARCH */
+  /* END @media INPUT SEARCH */
 }
 .nav__container .nav__header .nav-header div {
   display: flex;
@@ -157,6 +165,11 @@ a, a:link, a:visited {
   .nav__container .nav__header .nav-header .logo-title-search i {
     font-size: 20px;
     left: 7%;
+  }
+}
+@media screen and (min-width: 1368px) {
+  .nav__container .nav__header .nav-header input {
+    padding: 12px 5rem 12px 70px;
   }
 }
 .nav__container .nav__user {
