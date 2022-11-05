@@ -356,32 +356,46 @@ main {
       background: $black-Gray2;
       border-radius: 15px 15px 0 0;
 
+      /* DIRECTION INFO */
       .direction-info {
         display: inline-block;
         text-align: center;
 
+        /* P FIRST CHILD */
         p:first-child {
           font-size: 23px;
           font-weight: 500;
         }
+        /* END P FIRST CHILD */
 
+        /* P LAST CHILD */
         p:last-child{
           font-size: 12px;
           font-weight: 400;
           opacity: 50%;
         }
+        /* END P LAST CHILD */
 
+        /* @media direction info 540 */
         @media screen and (min-width: 540px){
+
+          /* P FIRST CHILD */
           p:first-child {
             font-size: 28px;
           }
-  
+          /* END P FIRST CHILD */
+
+          /* P LAST CHILD */
           p:last-child{
             font-size: 16px;
-
           }
+          /* END P LAST CHILD */
         }
+        /* END @media direction info 540 */
+
       }
+      /* END DIRECTION INFO */
+
     }
     /* END GPS DIRECTION ASSISTANT */
 
@@ -415,25 +429,35 @@ main {
 
       /* LOCAL INFO */
       .local-info {
+
+        /* P FIRST CHILD */
         p:first-child {
           font-size: 14px;
           font-weight: 600;
         }
+        /* END P FIRST CHILD */
 
+        /* P NTH CHILD(2) */
         p:nth-child(2){
           font-size: 12px;
           opacity: 50%;
         }
-        
+        /* END P NTH CHILD(2) */
+
         /* @media lcaol-info */
         @media screen and (min-width: 540px){
+
+          /* P FIRST CHILD */
           p:first-child {
             font-size: 18px;
           }
-  
+          /* END P FIRST CHILD */
+
+          /* P NTH CHILD(2) */
           p:nth-child(2){
             font-size: 16px;
           }
+          /* END P NTH CHILD(2) */
         }
         /* END @media lcaol-info */
 
@@ -447,11 +471,13 @@ main {
         gap: 8px;
         padding-top: 10px;
 
+        /* P NTH CHILD (1,3) */
         p:nth-child(1), 
         p:nth-child(3){
           font-size: 12px;
           opacity: 50%;
         }
+        /* END P NTH CHILD (1,3) */
 
         /* @media KM INFO */
         @media screen and (min-width: 540px){
@@ -472,9 +498,12 @@ main {
         padding: 14px 18px;
         border-radius: 40px;
 
+        /* LOCAL SEARCH HOVER */
         &:hover { 
           cursor: pointer;
         }
+        /* END LOCAL SEARCH HOVER */
+
       }
       /* END LOCAL SEARCH */
 

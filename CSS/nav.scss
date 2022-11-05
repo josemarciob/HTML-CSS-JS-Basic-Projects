@@ -9,6 +9,7 @@
   max-width: 1440px;
   margin: 0 auto;
 
+  /* @media nav container 768 */
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: center;
@@ -16,17 +17,21 @@
 
     flex-direction: column;
   }
+  /* END @media nav container 768 */
 
+  /* @media nav container 1024 */
   @media screen and (min-width: 1024px) {
     flex-direction: row;
   }
+  /* END @media nav container 1024 */
 
+  /* @media nav container 1368 */
   @media screen and (min-width: 1368px) {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-
+  /* END @media nav container 1368 */
 
   /* NAV HEADER */
   .nav__header {
@@ -37,25 +42,34 @@
       justify-content: space-between;
       padding: 1rem;
 
+      /* DIV */
       div {
         display: flex;
         align-items: center;
       }
+      /* END DIV */
 
+      /* h1 */
       h1 {
         font-size: 2em;
         margin-left: 16px;
       }
+      /* END h1 */
 
+      /* INPUT */
       input {
         display: none;
       }
+      /* END INPUT */
 
+      /* @media nav-header 425 */
       @media screen and (min-width: 425px) {
         h1 {
           font-size: 2em;
         }
       }
+      /* END @media nav-header 425 */
+
 
       /* LOGO-TITLE-SEARCH */
       .logo-title-search {
@@ -161,6 +175,7 @@
   .nav__user {
     display: none;
 
+    /* @media nav user 767 */
     @media screen and (max-width: 767px) {
       display: flex;
       align-items: center;
@@ -168,18 +183,24 @@
       margin-bottom: 1rem;
       gap: $gap-nav-user;
     }
+    /* end @media nav user 767 */
 
+    /* @media nav user 768 */
     @media screen and (min-width: 768px) {
       display: flex;
       align-items: center;
       margin-bottom: 1rem;
       gap: $gap-nav-user;
     }
+    /* END @media nav user 768 */
 
+    /* @media nav user 1024 */
     @media screen and (min-width: 1024px) {
       gap: $gap-nav-user2;
       margin-bottom: 0;
     }
+    /* END @media nav user 1024 */
+
 
     /* TIME */
     .nav-time {
@@ -187,11 +208,13 @@
       align-items: center;
       gap: $gap-nav-user;
 
+      /* IMG HOVER */
       img:hover {
         transition: all 0.6s ease;
         transform: scale(1.2);
         cursor: pointer;
       }
+      /* END IMG HOVER */
 
       /* DEGRESS/CLIMATE */
       .nav-degrees-climate {
@@ -214,12 +237,14 @@
       }
       /* END DEGRESS/CLIMATE */
 
+      /* @media nav time 1024 */
       @media screen and (max-width: 1024px) {
         /* DEGRESS CLIMATE/ CELSIUS */
 
         /* END DEGRESS CLIMATE/ CELSIUS */
       }
-
+      /* END @media nav time 1024 */
+      
       @media screen and (min-width: 1024px) {
         gap: $gap-nav-user2;
       }
@@ -232,11 +257,13 @@
       align-items: center;
       gap: $gap-nav-user;
 
+      /* IMG HOVER */
       img:hover {
         transition: all 0.6s ease;
         transform: scale(1.2);
         cursor: pointer;
       }
+      /* END IMG HOVER */
 
       /* USER PHOTO */
       .nav-user-photo img {
@@ -245,17 +272,23 @@
         font-weight: bold;
         padding: 2px;
 
+        /* IMG HOVER */
         &:hover {
           border: 3.5px solid $black-Gray2;
           cursor: pointer;
         }
+        /* END IMG HOVER */
+
       }
       /* END USER PHOTO */
 
+      /* @media nav user info 1180 */
       @media screen and (min-width: 1180px) {
         gap: $gap-nav-user2;
         margin-right: 2rem;
       }
+      /* END @media nav user info 1180 */
+
     }
     /* END USER INFO */
   }
@@ -288,10 +321,13 @@
     }
     /* END LI */
 
+    /* @media links 765 */
     @media screen and (min-width: 765px) {
       display: none;
     }
+    /* END @media links */
 
+    /* @media links 425 */
     @media screen and (min-width: 425px) {
       li {
         padding-left: 2rem;
@@ -301,6 +337,8 @@
         }
       }
     }
+    /* END @media links 425 */
+
   }
   /* END NAV LINKS */
 
