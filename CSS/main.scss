@@ -444,7 +444,7 @@ main {
         }
         /* END P NTH CHILD(2) */
 
-        /* @media lcaol-info */
+        /* @media local-info 540 */
         @media screen and (min-width: 540px){
 
           /* P FIRST CHILD */
@@ -459,7 +459,7 @@ main {
           }
           /* END P NTH CHILD(2) */
         }
-        /* END @media lcaol-info */
+        /* END @media local-info 540*/
 
       }
       /* END LOCAL INFO */
@@ -479,14 +479,14 @@ main {
         }
         /* END P NTH CHILD (1,3) */
 
-        /* @media KM INFO */
+        /* @media KM INFO 540 */
         @media screen and (min-width: 540px){
           p:nth-child(1), 
           p:nth-child(3){
             font-size: 16px;
           }
         }
-        /* END @media KM INFO */
+        /* END @media KM INFO 540 */
 
       }
       /* END KM INFO */
@@ -523,18 +523,21 @@ main {
       padding: 10px;
       gap: 10px;
 
-      /* @media MUSIC */
+      /* @media MUSIC 540 */
       @media screen and (min-width: 540px) {
         justify-content: center;
         gap: 40px;
         padding: 10px 0px;
 
+        /* IMG */
         img {
           width: 129px;
           height: 96px;
         }
+        /* END IMG */
+
       }
-      /* END @media MUSIC */
+      /* END @media MUSIC 540 */
 
       /* MUSIC NAME */
       .music-name{
@@ -542,9 +545,12 @@ main {
         font-size: 18px;
         font-weight: 600;
 
+        /* @media MUSICA NAME 540 */
         @media screen and (min-width: 540px) {
           font-size: 22px;
         }
+        /* END @media MUSICA NAME 540 */
+
       }
       /* END MUSIC NAME */
 
@@ -554,9 +560,12 @@ main {
         opacity: 50%;
         font-weight: 300;
 
+        /* @media MUSIC AUTHOR 540  */
         @media screen and (min-width: 540px) {
           font-size: 18px;
         }
+        /* END @media MUSIC AUTHOR 540  */
+
       }
       /* END MUSIC AUTHOR */
 
@@ -571,27 +580,36 @@ main {
       align-items: center;
       text-align: center;
 
+      /* MUSIC CONTROLLERS */
       .music-controllers {
         display: flex;
         justify-content: center;
         font-size: 20px;
         gap: 30px;
 
+        /* @media MUSIC CONTROLLERS 1368 */
         @media screen and (min-width: 1368px){
           padding-top: 10px;
         }
-  
+        /* END @media MUSIC CONTROLLERS 1368 */
+        
+        /* A */
         a {
           display: flex;
           align-items: center;
           transition: all 0.4s ease;
-  
+          
+          /* A HOVER */
           &:hover {
             transform: scale(1.5);
           }
+          /* END A HOVER */
+
         }
+        /* END A */
+
       }
-      
+      /* END MUSIC CONTROLLERS */
       
     }
     /* END MUSIC-CONTROLLER */
@@ -605,16 +623,20 @@ main {
     padding: 15px;
 
     //Window Closed title
+    /* H2 */
     h2 {
       margin: 15px 0;
       font-size: 14px;
       text-transform: uppercase;
       font-weight: 500;
     }
+    /* END H2 */
 
+    /* @media CLIMATE CONTAINER 540 */
     @media screen and (min-width: 540px){
       padding: 15px 22px;
     }
+    /* END @media CLIMATE CONTAINER 540 */
 
 
     /* CLIMATE-BOX */
@@ -627,28 +649,40 @@ main {
       .climate {
         align-items: center;
 
+        /* H1 */
         h1 {
           font-size: 20px;
           font-weight: 500;
           margin-bottom: 8px;
         }
-  
+        /* END H1 */
+
+        /* P */
         p {
           font-size: 12px;
           opacity: 50%;
           text-transform: uppercase;
         }
+        /* END P */
 
+        /* @media CLIMATE 540 */
         @media screen and (min-width: 540px){
+
+          /* H1 */
           h1 {
             font-size: 30px;
             margin-bottom: 0px;
           }
-          
+          /* END H1 */
+
+          /* P */
           p {
             font-size: 16px;
           }
+          /* END P */
         }
+        /* END @media CLIMATE 540 */
+
       }
       /* END CLIMATE */
 
@@ -658,14 +692,19 @@ main {
         align-items: center;
         gap: 12px;
 
+        /* @media CLIMATE DEGREES 540 */
         @media screen and (min-width: 540px){
           gap: 30px;          
         }
-  
+        /* END @media CLIMATE DEGREES 540 */
+
+        /* H3 */
         h3 {
           font-size: 45px;
           font-weight: 600;
         }
+        /* END H3 */
+
       }
       /* END CLIMATE-DEGREES */
 
@@ -679,9 +718,11 @@ main {
       align-items: center;
       margin-top: 10px;
 
+      /* @media CLIMATE PROGRESS 540*/
       @media screen and (min-width: 540px){
         margin-top: 20px;
       }
+      /* END @media CLIMATE PROGRESS 540 */
 
       /* CLIMATE DEGREES PROGRESS */
       .climate-degrees-progress {
@@ -691,9 +732,12 @@ main {
         font-size: 12px;
         opacity: 50%;
 
+        /* @media CLIMATE DEGREES PROGRESS 540 */
         @media screen and (min-width: 540px){
           font-size: 14px;
         }
+        /* END @media CLIMATE DEGREES PROGRESS 540 */
+
       }
       /* END CLIMATE DEGREES PROGRESS */
 
@@ -707,9 +751,11 @@ main {
   .calender__container{
     padding: 18px;
 
+    /* @media CALENDER CONTAINER 540 */
     @media screen and (min-width: 540px){
       padding: 18px 22px;
     }
+    /* END @media CALENDER CONTAINER 540 */
 
     /* HEADER */
     header {
@@ -717,16 +763,25 @@ main {
       align-items: center;
       justify-content: space-between;
 
+      /* H1 */
       h1 {
         font-size: 20px;
         font-weight: 500;
       }
+      /* END H1 */
 
+      /* @media HEADER 540*/
       @media screen and (min-width: 540px){
+
+        /* H1 */
         h1 {
           font-size: 28px;
         };
+        /* END H1 */
+
       }
+      /* @media HEADER 540*/
+
     }
     /* END HEADER */
 
@@ -737,9 +792,12 @@ main {
       opacity: 50%;
       font-size: 14px;
 
+      /* @media CALENDER DATE 540 */
       @media screen and (min-width: 540px){
         font-size: 16px;
       }
+      /* END @media CALENDER DATE 540 */
+
     }
     /* END CALENDER DATE */
 
@@ -774,20 +832,23 @@ main {
           border-radius: 10px;
           border-left: 10px solid $yellow-Green;
 
-          /* @media @BOX COMMITMENT */
+          /* @media @BOX COMMITMENT 540*/
           @media screen and (min-width: 540px){
             width: 100%;
             padding-bottom: 24px;
           }
-          /* END @media @BOX COMMITMENT */
+          /* END @media @BOX COMMITMENT 540*/
 
           /* TITLE COMMITMENT */
           .title-commitment {
             font-size: 18px;
 
+            /* @media TITLE COMMITMENT 540 */
             @media screen and (min-width: 540px){
               font-size: 20px;
             }
+            /* END @media TITLE COMMITMENT 540 */
+
           }
           /* END TITLE COMMITMENT */
 
@@ -827,12 +888,12 @@ main {
     width: 100% ;
     max-width: 320px;
 
-    /* @media CONTROL TOOLS CONTAINER */
+    /* @media CONTROL TOOLS CONTAINER 540 */
     @media screen and (min-width: 540px){
       max-width: 540px;
       padding: 15px;
     }
-    /* END @media CONTROL TOOLS CONTAINER */
+    /* END @media CONTROL TOOLS CONTAINER 540 */
 
     /* CONTROLS WRAPPER */
     .controls-wrapper {
@@ -847,12 +908,15 @@ main {
       gap: 26px;
       padding: 0 1.1rem;
 
+      /* @media CONTROLS 540 */
       @media screen and (min-width: 540px){
         gap: 45px;
         padding: 0;
         align-items: center;
         justify-content: center;
       }
+      /* END @media CONTROLS 540 */
+
     }
     /* END CONTROLS */
 
@@ -876,34 +940,44 @@ main {
       transition: all 200ms ease-in-out;
       z-index: 10;
 
+      /* @media ARROW LEFT/RIGHT 540 */
       @media screen and (min-width: 540px){
         display: none;
       }
+      /* END @media ARROW LEFT/RIGHT 540 */
+
     }
 
-   
-
+    /* ARROW LEFT */
       .arrow-left {
         border-radius: 14px 0 0 14px;
       }
+    /* END ARROW LEFT */
 
+      /* ARROW RIGHT */
       .arrow-right {
         left: auto;
         right: 0;
         border-radius: 0 14px 14px 0;
         background: linear-gradient(to right, transparent 0%, black 200%);
       }
+      /* END ARROW RIGHT */
 
+      /* ARROW LEFT/RIGHT .. HOVER */
       .arrow-left:hover,
       .arrow-right:hover {
         opacity: 1;
         font-size: 30px;
       }
+      /* END ARROW LEFT/RIGHT .. HOVER */
 
+      /* CONTROL ITEM */
       .control-item {
         text-align: center;
       }
+      /* END CONTROL ITEM */
 
+      /* ITEM */
       .item {
         width: 50px;
         height: 50px;
@@ -912,34 +986,49 @@ main {
         border: 2px solid $black-Gray;
         transition: all 200ms ease-in-out;
 
+        /* @media ITEM 540 */
         @media screen and (min-width: 540px){
           opacity: 1;
         }
-      }
+        /* END @media ITEM 540 */
 
+      }
+      /* END ITEM */
+
+      /* CURRENT ITEM */
       .current-item {
         opacity: 1;
         border: 2px solid $yellow-Green;
         border-radius: 5px 10px;
 
+        /* @media CURRENT ITEM 540 */
         @media screen and (min-width: 540px){
           border: none;
         }
+        /* END @media CURRENT ITEM */
+
       }
+      /* END CURRENT ITEM */
+
 
       /* This is from w3schools */
       /* 
       https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp */
       /* Hide scrollbar for Chrome, Safari and Opera */
+      /* CONTROLS WRAPPER webkit-scrollbar */
       .controls-wrapper::-webkit-scrollbar {
         display: none;
       }
+      /* END CONTROLS WRAPPER webkit-scrollbar */
 
       /* Hide scrollbar for IE, Edge and Firefox */
+      /* CONTROLS WRAPPER */
       .controls-wrapper {
         -ms-overflow-style: none; /* IE and Edge */
         scrollbar-width: none; /* Firefox */
       }
+      /* END CONTROLS WRAPPER */
+
 
 
   }
@@ -953,11 +1042,11 @@ main {
     align-items: center;
     justify-content: space-between;
 
-    /* @media EMERGENCY CONTAINER */
+    /* @media EMERGENCY CONTAINER 540 */
     @media screen and (min-width: 540px){
       padding: 1.5rem;
     }
-    /* END @media EMERGENCY CONTAINER */
+    /* END @media EMERGENCY CONTAINER 540 */
 
     /* EMERGENCY */
     .emergency {
@@ -967,36 +1056,44 @@ main {
 
       gap: 1rem;
 
-      /* @media EMERGENCY */
+      /* @media EMERGENCY 540 */
       @media screen and (min-width: 540px){
         gap: 1.5rem;
       }
-      /* END @media EMERGENCY */
+      /* END @media EMERGENCY 540 */
 
 
       /* EMERGENCY TITLE */
       .emergency-title {
+        /* H2 */
         h2 {
           font-size: 1.475rem;
         }
+        /* END H2 */
 
+        /* P */
         p {
           font-size: 0.875rem;
           opacity: 50%;
         }
+        /* END P */
 
-        /* @media emergency-title */
+        /* @media emergency-title 540 */
         @media screen and (min-width: 540px){
+          /* H2 */
           h2 {
             font-size: 1.675rem;
           }
-  
+          /* END H2 */
+          
+          /* P */
           p {
             font-size: 1rem;
             opacity: 50%;
           }
+          /* END P */
         }
-        /* end @media emergency-title */
+        /* end @media emergency-title 540 */
 
       }
       /* END EMERGENCY TITLE */
@@ -1011,6 +1108,7 @@ main {
   .car__container {
     transition: all 1s ease;
 
+    /* CAR CONTAINER */
     .car-container {
       height: 0;
       transition: all 1s cubic-bezier(0, 1.38, 1, 1.38);
@@ -1026,18 +1124,23 @@ main {
   
         /* ANALOG LEFT/RIGHT */
         .analog-left, .analog-right {
+          /* ANALOG LEFT/RIGHT .. HOVER */
           &:hover {
             cursor: pointer;
           }
+          /* END ANALOG LEFT/RIGHT .. HOVER */
+
           
-          /* @media analog-left-right */
+          /* @media analog-left-right 540 */
           @media screen and (min-width: 540px){
+            /* IMG */
             img {
               width: 86px;
               height: 86px;
             }
+            /* END IMG */
           }
-          /* END @media analog-left-right */
+          /* END @media analog-left-right 540*/
 
         }
         /* END ANALOG LEFT/RIGHT */
@@ -1046,14 +1149,14 @@ main {
         .car{
           z-index: 10;
   
-          /* @media CAR */
+          /* @media CAR 540 */
           @media screen and (min-width: 540px){
             img {
               width: 358px;
               height: 191px;
             }
           }
-          /* END @media CAR */
+          /* END @media CAR 540*/
 
         }
         /* END CAR */
@@ -1075,16 +1178,18 @@ main {
           top: -6rem;
           left: 0.275rem;
           
-          /* @media PLATFORM CAR */
+          /* @media PLATFORM CAR 540 */
           @media screen and (min-width: 540px){
             top: -8.5rem;
             left: 0.875rem;
-  
+            
+            /* IMG */
             img {
               width: 500px;      
             }
+            /* END IMG */
           }
-          /* END @media PLATFORM CAR */
+          /* END @media PLATFORM CAR 540 */
 
         }
         /* END PLATFORM CAR */
@@ -1103,28 +1208,28 @@ main {
         
         z-index: 11;
   
-  
         /* PLATFORM OPEN & BLOCK */
         .platform-open, .platform-block {
           display: flex;
           position: absolute;
           top: -4rem;
   
+          /* PLAFTORM OPEN/BLOCK .. HOVER */
           &:hover {
             cursor: pointer;
           }
+          /* END PLAFTORM OPEN/BLOCK .. HOVER */
+
         }
         /* END PLATFORM OPEN & BLOCK */
   
         /* PLATFORM BLOCK */
         .platform-block {
           left: 234px;
-          
         }
         /* END PLATFORM BLOCK */
   
-  
-        /* @media PLATFORM Open & Block */
+        /* @media PLATFORM Open & Block 540 */
         @media screen and (min-width: 540px){
           padding: 0 5rem;
   
@@ -1133,15 +1238,20 @@ main {
             display: flex;
             position: absolute;
             top: -6rem;   
-  
+            
+            /* IMG */
             img {
               width: 50px;
               height: 50px;
             }
-      
+            /* END IMG */
+
+            /* PLATGORM OPEN/BLOCK .. HOVER */
             &:hover {
               cursor: pointer;
             }
+            /* END PLATGORM OPEN/BLOCK .. HOVER */
+
           }
           /* END PLATFORM OPEN & BLOCK */
   
@@ -1149,25 +1259,26 @@ main {
           /* PLATFORM BLOCK */
           .platform-block {
             left: 410px;
-            
           }
           /* END PLATFORM BLOCK */
         }
-        /* END @media PLATFORM Open & Block */
+        /* END @media PLATFORM Open & Block 540 */
   
       }
       /* END PLATFORM OPEN-BLOCK */
     }
+    /* END CAR CONTAINER */
+
 
     /* SHOW-CAR */
     .show-car {
       height: 10rem;
 
-      /* @media SHOW CAR */
+      /* @media SHOW CAR 540 */
       @media screen and (min-width: 540px){
         height: 15rem;
       }
-      /* END @media SHOW CAR */
+      /* END @media SHOW CAR 540 */
 
     }
     /* END SHOW-CAR */
@@ -1181,11 +1292,11 @@ main {
       gap: 1.5rem;
       transition: all 0.4s ease;
 
-      /* @media CAR CONTROLS */
+      /* @media CAR CONTROLS 540 */
       @media screen and (min-width: 540px){
         gap: 3rem;
       }
-      /* END @media CAR CONTROLS */
+      /* END @media CAR CONTROLS 540 */
 
 
       /* CAR CONTROLS LI */
@@ -1193,36 +1304,51 @@ main {
         text-align: center;
         transition: all 0.4s ease;
 
+        /* LI .. HOVER */
         &:hover {
           transform: scale(1.1);
           cursor: pointer;
         }
+        /* END LI .. HOVER */
 
+        /* P */
         p {
           font-size: 14px;
         }
+        /* END P */
 
+        /* LOGIN FINGERPRINT */
         .login-fingerprint {
           display: none;
         }
+        /* END LOGIN FINGERPRINT */
 
+        /* DISCONNECT */
         .disconnect {
           display: none;
         }
+        /* END DISCONNECT */
 
-        .show-disconnect {
+        /* SHOW DISCONNECT */
+        .show-disconnect { 
           display: flex;
         }
-        
-        /* @media LI */
+        /* END SHOW DISCONNECT */
+
+        /* @media LI 540 */
         @media screen and (min-width: 540px){
+          /* P */
           p {
             font-size: 1.2rem;
           }
+          /* END P */
 
+          /* IMG */
           img {
             width: 50px;
           }
+          /* END IMG */
+
         }
         /* END @media LI */
 
@@ -1262,28 +1388,33 @@ main {
 
       margin-top: 1rem;
 
-      /* @media PETRO/BATTERY/SPEEDOMETER */
+      /* @media PETRO/BATTERY/SPEEDOMETER 540 */
       @media screen and (min-width: 540px){
         margin-top: 2rem;
 
         /* PETROL / BATTERY */
         .petrol, .battery {
+          /* IMG */
           img {
             width: 127px;
           }
+          /* END IMG */
         }
         /* END PETROL / BATTERY */
 
         /* SPEEDOMETER */
         .speedometer {
+          /* IMG */
           img {
             width: 280px;
           }
+          /* END IMG */
+
         }
         /* END SPEEDOMETER */
 
       }
-      /* END @media PETRO/BATTERY/SPEEDOMETER */
+      /* END @media PETRO/BATTERY/SPEEDOMETER 540 */
 
 
       /* BOARD PETROL & BOARD BATTERY */
@@ -1292,16 +1423,18 @@ main {
         position: absolute;
         top: 40px;
         
+        /* P FIRST CHILD */
         p:first-child {
           margin-top: 4px;
           
-          /* @media P first-child */
+          /* @media P first-child 540 */
           @media screen and (min-width: 540px){
             padding-top: 18px;
           }
-          /* END @media P first-child */
-
+          /* END @media P first-child 540 */
         }
+        /* END P FIRST CHILD */
+
       }
       /* END BOARD PETROL & BOARD BATTERY */
 
@@ -1310,11 +1443,11 @@ main {
       .board-petrol {
         left: 24px;
 
-        /* @media BOARD PETROL */
+        /* @media BOARD PETROL 540 */
         @media screen and (min-width: 540px){
           left: 44px;
         }
-        /* END @media BOARD PETROL */
+        /* END @media BOARD PETROL 540 */
 
       }
       /* END BOARD PETROL */
@@ -1323,11 +1456,11 @@ main {
       .board-battery {
         right: 16px;
 
-        /* @media BOARD BATTERY */
+        /* @media BOARD BATTERY 540 */
         @media screen and (min-width: 540px){
           right: 40px;
         }
-        /* END @media BOARD BATTERY */
+        /* END @media BOARD BATTERY 540 */
 
       }
       /* END BOARD BATTERY */
@@ -1344,11 +1477,11 @@ main {
     .show-car-panel-board {
       height: 10rem;
 
-      /* @media SHOW CAR PANEL BOARD */
+      /* @media SHOW CAR PANEL BOARD 540 */
       @media screen and (min-width: 540px){
         height: 15rem;
       }
-      /* END @media SHOW CAR PANEL BOARD */
+      /* END @media SHOW CAR PANEL BOARD 540 */
 
     }
     /* END SHOW CAR PANEL BOARD */
