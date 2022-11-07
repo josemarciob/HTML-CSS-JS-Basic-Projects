@@ -53,6 +53,12 @@
       h1 {
         font-size: 2em;
         margin-left: 16px;
+        transition: all ease 0.40s;
+
+        &:hover {
+          color: $yellow-Green;
+          cursor: pointer;
+        }
       }
       /* END h1 */
 
@@ -76,6 +82,10 @@
         i {
           display: none;
           margin-left: 16px;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
       }
       /* END LOGO-TITLE-SEARCH */
