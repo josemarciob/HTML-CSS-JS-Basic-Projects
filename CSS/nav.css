@@ -39,6 +39,12 @@ a, a:link, a:visited {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+  /* @media nav container 768 */
+  /* END @media nav container 768 */
+  /* @media nav container 1024 */
+  /* END @media nav container 1024 */
+  /* @media nav container 1368 */
+  /* END @media nav container 1368 */
   /* NAV HEADER */
   /* END NAV HEADER */
   /* NAV USER */
@@ -77,6 +83,14 @@ a, a:link, a:visited {
   align-items: center;
   justify-content: space-between;
   padding: 1rem;
+  /* DIV */
+  /* END DIV */
+  /* h1 */
+  /* END h1 */
+  /* INPUT */
+  /* END INPUT */
+  /* @media nav-header 425 */
+  /* END @media nav-header 425 */
   /* LOGO-TITLE-SEARCH */
   /* END LOGO-TITLE-SEARCH */
   /* NAV TOGGLE */
@@ -95,6 +109,11 @@ a, a:link, a:visited {
 .nav__container .nav__header .nav-header h1 {
   font-size: 2em;
   margin-left: 16px;
+  transition: all ease 0.4s;
+}
+.nav__container .nav__header .nav-header h1:hover {
+  color: #cff80b;
+  cursor: pointer;
 }
 .nav__container .nav__header .nav-header input {
   display: none;
@@ -107,6 +126,9 @@ a, a:link, a:visited {
 .nav__container .nav__header .nav-header .logo-title-search i {
   display: none;
   margin-left: 16px;
+}
+.nav__container .nav__header .nav-header .logo-title-search i:hover {
+  cursor: pointer;
 }
 .nav__container .nav__header .nav-header .nav-toggle {
   font-size: 2rem;
@@ -174,6 +196,12 @@ a, a:link, a:visited {
 }
 .nav__container .nav__user {
   display: none;
+  /* @media nav user 767 */
+  /* end @media nav user 767 */
+  /* @media nav user 768 */
+  /* END @media nav user 768 */
+  /* @media nav user 1024 */
+  /* END @media nav user 1024 */
   /* TIME */
   /* END TIME */
   /* USER INFO */
@@ -206,8 +234,12 @@ a, a:link, a:visited {
   display: flex;
   align-items: center;
   gap: 17px;
+  /* IMG HOVER */
+  /* END IMG HOVER */
   /* DEGRESS/CLIMATE */
   /* END DEGRESS/CLIMATE */
+  /* @media nav time 1024 */
+  /* END @media nav time 1024 */
 }
 .nav__container .nav__user .nav-time img:hover {
   transition: all 0.6s ease;
@@ -245,8 +277,12 @@ a, a:link, a:visited {
   display: flex;
   align-items: center;
   gap: 17px;
+  /* IMG HOVER */
+  /* END IMG HOVER */
   /* USER PHOTO */
   /* END USER PHOTO */
+  /* @media nav user info 1180 */
+  /* END @media nav user info 1180 */
 }
 .nav__container .nav__user .nav-user-info img:hover {
   transition: all 0.6s ease;
@@ -258,6 +294,8 @@ a, a:link, a:visited {
   border-radius: 40px;
   font-weight: bold;
   padding: 2px;
+  /* IMG HOVER */
+  /* END IMG HOVER */
 }
 .nav__container .nav__user .nav-user-info .nav-user-photo img:hover {
   border: 3.5px solid #252525;
@@ -277,6 +315,10 @@ a, a:link, a:visited {
   z-index: 10;
   /* LI */
   /* END LI */
+  /* @media links 765 */
+  /* END @media links */
+  /* @media links 425 */
+  /* END @media links 425 */
 }
 .nav__container .links li {
   display: flex;
