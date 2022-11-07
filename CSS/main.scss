@@ -54,6 +54,21 @@ main {
         background: $black-Gray2;
         padding: 20px;
         border-radius: 100%;
+        border: 4px solid $black-Gray;
+        transition: all ease 0.40s;
+        font-size: 1.7rem;
+        
+        &:hover {
+          cursor: pointer;
+          background: $yellow-Green ;
+          color: $black-Gray2;
+
+        }
+      }
+      
+      .active {
+        background: $yellow-Green;
+        color: $black-Gray2;
       }
       /* END Item */
 
@@ -125,6 +140,16 @@ main {
       /* MUSIC */
       .music {
         gap: 20px !important;
+        transition: all ease 0.40s;
+
+        .music-name,
+        .music-author {
+
+          &:hover {
+            cursor: pointer;
+            color: $yellow-Green;
+          }
+        }
       }
       /* END MUSIC */
 
@@ -434,6 +459,12 @@ main {
         p:first-child {
           font-size: 14px;
           font-weight: 600;
+          transition: all ease 0.40s;
+
+          &:hover {
+            cursor: pointer;
+            color: $yellow-Green;
+          }
         }
         /* END P FIRST CHILD */
 
@@ -497,10 +528,18 @@ main {
         background: $black-Gray3;
         padding: 14px 18px;
         border-radius: 40px;
+        transition: all ease 0.40s;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 1.2rem;
+        }
 
         /* LOCAL SEARCH HOVER */
-        &:hover { 
+        &:hover {
+          background: $yellow-Green; 
+          color: $black-Gray;
           cursor: pointer;
+          transform: scale(1.1);
         }
         /* END LOCAL SEARCH HOVER */
 
@@ -702,6 +741,10 @@ main {
         h3 {
           font-size: 45px;
           font-weight: 600;
+
+          &:hover {
+            cursor: pointer;
+          }
         }
         /* END H3 */
 
@@ -767,8 +810,20 @@ main {
       h1 {
         font-size: 20px;
         font-weight: 500;
+
+        &:hover {
+          cursor: pointer;
+        }
       }
       /* END H1 */
+
+      .fa-ellipsis {
+        font-size: 2rem;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
 
       /* @media HEADER 540*/
       @media screen and (min-width: 540px){
@@ -818,10 +873,15 @@ main {
         align-items: center;
         margin: 10px 0px;
 
+        &:hover {
+          cursor: pointer;
+        }
+
         /* HOURS */
         .hours {
           opacity: 50%;
           margin-right: 2rem;
+          
         }
         /* END HOURS */
 
@@ -831,6 +891,13 @@ main {
           padding: 10px 10px 20px 10px;
           border-radius: 10px;
           border-left: 10px solid $yellow-Green;
+
+          transition: all ease 0.40s;
+
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.05);
+          }
 
           /* @media @BOX COMMITMENT 540*/
           @media screen and (min-width: 540px){
@@ -974,6 +1041,11 @@ main {
       /* CONTROL ITEM */
       .control-item {
         text-align: center;
+
+        &:hover {
+          cursor: pointer;
+          color: $yellow-Green;
+        }
       }
       /* END CONTROL ITEM */
 
@@ -1041,6 +1113,10 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
+    &:hover {
+      cursor: pointer;
+    }
 
     /* @media EMERGENCY CONTAINER 540 */
     @media screen and (min-width: 540px){
@@ -1100,6 +1176,13 @@ main {
 
     }
     /* END EMERGENCY */
+
+    .emergency-switch {
+      
+      &:hover {
+        cursor: pointer;
+      }
+    }
 
   }
   /* END SECTION EMERGENCY */
