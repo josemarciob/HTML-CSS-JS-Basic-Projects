@@ -58,21 +58,24 @@ main {
         transition: all ease 0.40s;
         font-size: 1.7rem;
         
+        /* LI .. HOVER */
         &:hover {
           cursor: pointer;
           background: $yellow-Green ;
           color: $black-Gray2;
 
         }
+        /* END LI .. HOVER */
+
       }
+      /* END Item */
       
+      /* LI ACTIVE */
       .active {
         background: $yellow-Green;
         color: $black-Gray2;
       }
-      /* END Item */
-
-     
+      /* end LI ACTIVE */  
     }
     /* END SIDE LINKS */  
 
@@ -92,9 +95,12 @@ main {
       .climate-box {
         display: block !important;
 
+        /* CLIMATE DEGREES */
         .climate-degrees {
           justify-content: space-between;
         }
+        /* END CLIMATE DEGREES */
+
       }
       /* END CLIMATE BOX */
 
@@ -142,13 +148,17 @@ main {
         gap: 20px !important;
         transition: all ease 0.40s;
 
+        /* MUSIC NAME / AUTHOR */
         .music-name,
         .music-author {
 
+          /* MUSIC NAME/AUTHOR .. HOVER  */
           &:hover {
             cursor: pointer;
             color: $yellow-Green;
           }
+          /* END MUSIC NAME/AUTHOR .. HOVER  */
+
         }
       }
       /* END MUSIC */
@@ -360,15 +370,12 @@ main {
   }
   /* END SECTIONS */
 
-
-
   //SECTION CAR__CONTAINER
   section:nth-child(8) {
     background: transparent;
   }
   //END SECTION CAR__CONTAINER
 
-  
   /* SECTION GPS */
   .gps__container {
 
@@ -428,16 +435,20 @@ main {
     .gps-map {
       text-align: center;
 
+      /* IMG */
       img {
         max-width: 100%;
 
+        /* @MEDIA IMG 540 */
         @media screen and (min-width: 540px) {
           width: 400px;
           height: 350px;
         }
+        /* END @MEDIA IMG 540 */
 
-        
       }
+      /* END IMG */
+
     }
     /* END GPS MAP */
 
@@ -461,10 +472,13 @@ main {
           font-weight: 600;
           transition: all ease 0.40s;
 
+          /* P FIRSR CHILD .. HOVER */
           &:hover {
             cursor: pointer;
             color: $yellow-Green;
           }
+          /* END P FIRSR CHILD .. HOVER */
+
         }
         /* END P FIRST CHILD */
 
@@ -530,11 +544,14 @@ main {
         border-radius: 40px;
         transition: all ease 0.40s;
 
+        /* @media LOCAL SEARCH 1024*/
         @media screen and (min-width: 1024px) {
           font-size: 1.2rem;
         }
+        /* @media LOCAL SEARCH 1024 */
 
-        /* LOCAL SEARCH HOVER */
+
+        /* LOCAL SEARCH .. HOVER */
         &:hover {
           background: $yellow-Green; 
           color: $black-Gray;
@@ -638,11 +655,11 @@ main {
           align-items: center;
           transition: all 0.4s ease;
           
-          /* A HOVER */
+          /* A .. HOVER */
           &:hover {
             transform: scale(1.5);
           }
-          /* END A HOVER */
+          /* END A .. HOVER */
 
         }
         /* END A */
@@ -742,9 +759,12 @@ main {
           font-size: 45px;
           font-weight: 600;
 
+          /* H3 .. HOVER */
           &:hover {
             cursor: pointer;
           }
+          /* END H3 .. HOVER */
+
         }
         /* END H3 */
 
@@ -811,18 +831,24 @@ main {
         font-size: 20px;
         font-weight: 500;
 
+        /* H1 .. HOVER */
         &:hover {
           cursor: pointer;
         }
+        /* END H1 .. HOVER */
+
       }
       /* END H1 */
 
       .fa-ellipsis {
         font-size: 2rem;
 
+        /* FA-ELLIPSIS .. HOVER */
         &:hover {
           cursor: pointer;
         }
+        /* END FA-ELLIPSIS .. HOVER */
+
       }
 
       /* @media HEADER 540*/
@@ -873,15 +899,17 @@ main {
         align-items: center;
         margin: 10px 0px;
 
+        /* COMMITMENT .. HOVER */
         &:hover {
           cursor: pointer;
         }
+        /* END COMMITMENT .. HOVER */
+
 
         /* HOURS */
         .hours {
           opacity: 50%;
           margin-right: 2rem;
-          
         }
         /* END HOURS */
 
@@ -894,10 +922,13 @@ main {
 
           transition: all ease 0.40s;
 
+          /* BOX COMMITMEN .. HOVER */
           &:hover {
             cursor: pointer;
             transform: scale(1.05);
           }
+          /* END BOX COMMITMEN .. HOVER */
+
 
           /* @media @BOX COMMITMENT 540*/
           @media screen and (min-width: 540px){
@@ -987,7 +1018,7 @@ main {
     }
     /* END CONTROLS */
 
-    
+    /* ARROW LEFT/RIGHT */
     .arrow-left,
     .arrow-right {
       position: absolute;
@@ -1014,6 +1045,8 @@ main {
       /* END @media ARROW LEFT/RIGHT 540 */
 
     }
+    /* END ARROW LEFT/RIGHT */
+
 
     /* ARROW LEFT */
       .arrow-left {
@@ -1042,10 +1075,13 @@ main {
       .control-item {
         text-align: center;
 
+        /* CONTROL ITEM .. HOVER */
         &:hover {
           cursor: pointer;
           color: $yellow-Green;
         }
+        /* END CONTROL ITEM .. HOVER */
+
       }
       /* END CONTROL ITEM */
 
@@ -1114,9 +1150,11 @@ main {
     align-items: center;
     justify-content: space-between;
     
+    /* EMERGENCY CONTAINER .. HOVER */
     &:hover {
       cursor: pointer;
     }
+    /* END EMERGENCY CONTAINER .. HOVER */
 
     /* @media EMERGENCY CONTAINER 540 */
     @media screen and (min-width: 540px){
@@ -1179,11 +1217,12 @@ main {
 
     .emergency-switch {
       
+      /* EMERGENCY SWITCH .. HOVER */
       &:hover {
         cursor: pointer;
       }
+      /* END EMERGENCY SWITCH .. HOVER */
     }
-
   }
   /* END SECTION EMERGENCY */
 
