@@ -18,3 +18,6 @@
 - Black : #111111;
 - Blue-Green: #00FFA4;
 - Black-Gray: #1E1E1E;
+- black-Gray-alter: #141414;
+- black-Gray2: #252525;
+- black-Gray3: #2c2c2c;
