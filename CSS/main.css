@@ -353,7 +353,9 @@ a, a:link, a:visited {
 }
 .nav__container .links li {
   display: flex;
-  padding-left: 10px;
+  align-items: center;
+  font-size: 1.5rem;
+  padding-left: 16px;
   transition: all 0.3s linear;
   /* link */
   /* end link */
